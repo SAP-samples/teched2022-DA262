@@ -1,18 +1,30 @@
-# Session ID - Session Title
+# DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud
 
 ## Description
-
-This repository contains the material for the SAP TechEd 2022 session called Session ID - Session Title.  
+This repository contains the material for the SAP TechEd 2022 session called DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud
 
 ## Overview
+This hands-on workshop will give you the opportunity to build a scenario with exercises for SAP Data Warehouse Cloud and SAP Analytics Cloud. Find out how the SAP Data Warehouse Cloud solution helps the line-of-business user get the job done. Discover flexible connection features, and learn how you can access data from different sources. Create an extendable business semantic model in an agile way, and connect analytics and visualization components in the context of a data warehouse.
 
-This session introduces attendees to...
+## Pre-Requisites
+Google Chrome, access to this GitHub repository and access to a guided experience trial system of SAP Data Warehouse Cloud. You will also need a set of files for these exercises.
 
-## Requirements
+Download the "Car_Manufacturer.csv" from the GitHub site: xxx
 
-The requirements to follow the exercises in this repository are...
+## Disclaimer
+Your screen shots may look different than those in the exercises; they may contain additional content, depending on what other attendees have entered.
+Some user interface elements may differ from the screenshot used in the exercise.
+Exercises
+Be aware that some of the exercises are based on each other, therefore flagged as mandatory. Other parts can work based on prebuilt parts to save you some time, marked as optional. This gives you the flexibility to decide which exercises you would like to focus on.
 
 ## Exercises
+
+
+## Getting Started
+
+Get your guided experience trial system of SAP Data Warehouse Cloud (mandatory)
+Sample Business Scenario & Data Model Overview (optional)
+SAP Data Warehouse Cloud
 
 Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
