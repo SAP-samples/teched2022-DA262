@@ -10,7 +10,7 @@ This hands-on workshop will give you the opportunity to build a scenario with ex
 ## Pre-Requisites
 Google Chrome, access to this GitHub repository and access to a guided experience trial system of SAP Data Warehouse Cloud. You will also need a set of files for these exercises.
 
-Download the "DA262_Resource.zip" from the GitHub site: xxx
+Download the [DA262_Resources.zip](DA262_Resources.zip) from this GitHub Repo 
 
 ## Disclaimer
 Your screen shots may look different than those in the exercises; they may contain additional content, depending on what other attendees have entered.
