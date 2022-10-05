@@ -34,7 +34,7 @@ Provide the exercise content here directly in README.md using [markdown](https:/
     - [Exercise 1.2 - via external connection](exercises/ex1#exercise-12-sub-exercise-2-description)
 - [Exercise 2 - Upload car manufacturer data](exercises/ex2/)
 - [Exercise 3 - Combine two data sets](exercises/ex3/)
-  
+- [Exercise 3 - Build a multifact business model](exercises/ex4/)  
 
 Start the exercises [here](https://developers.sap.com/tutorials/abap-environment-trial-onboarding.html).
 
