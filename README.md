@@ -21,7 +21,7 @@ MyCompany provides fleet management services for large enterprise customers. The
 - Google Chrome
 - Access to this GitHub repository
 - Access to a SAP Data Warehouse Cloud tennant [Link to a guided experience trial system of SAP Data Warehouse Cloud](https://www.example.com)
-- the files in the download folder [DA262_Resource.zip](DA262_Resource.zip) from this GitHub Repo 
+- the files in the download folder [DA262_Resource.zip](DA262_Resource.zip) from this GitHub Repo (xxx)
 
 ## Disclaimer
 Your screen shots may look different than those in the exercises; they may contain additional content, depending on what other attendees have entered.
@@ -30,12 +30,6 @@ Exercises
 Be aware that some of the exercises are based on each other, therefore flagged as mandatory. Other parts can work based on prebuilt parts to save you some time, marked as optional. This gives you the flexibility to decide which exercises you would like to focus on.
 
 ## Exercises
-
-Get your guided experience trial system of SAP Data Warehouse Cloud (mandatory)
-Sample Business Scenario & Data Model Overview (optional)
-SAP Data Warehouse Cloud
-
-Provide the exercise content here directly in README.md using [markdown](https://guides.github.com/features/mastering-markdown/) and linking to the specific exercise pages, below is an example.
 
 - [Exercise 0 - Preparations (optional, if you  already have access to a DWC tennant)](exercises/ex0/)
 - [Exercise 1 - Get external Data German Car Sales Data](exercises/ex1/)
