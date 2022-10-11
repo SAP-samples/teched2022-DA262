@@ -2,11 +2,11 @@
 
 There are 4 different ways to load data into the SAP Data Warehouse Cloud. 
 You can choose either of 3 to load the needed data:
-- Exercise 1.1 - Via Data Market Place (optional, not available in Learning Experience systems)
-- Exercise 1.2 - External Connection
-- Exercise 1.3 - Import Remote Table
-- Exercise 1.4 - Import table from SAP S/4 HANA
-- Exercise 1.5 - Import CSVs
+- [Exercise 1.1 - Via Data Market Place (optional, not available in Learning Experience systems)](#exercise-11---via-data-market-place-optional-not-available-in-learning-experience-systems)
+- [Exercise 1.2 - External Connection](#exercise-12---external-connection)
+- [Exercise 1.3 - Import Remote Table](#exercise-13---import-remote-table)
+- [Exercise 1.4 - Import table from SAP S/4 HANA](#exercise-14---Import-table-from-SAP-S/4-HANA)
+- [Exercise 1.5 - Import CSVs](#exercise-15---Import-CSVs)
 
 ## Exercise 1.1 - Via Data Market Place (optional, not available in Learning Experience systems)
 Skip this, if you use the DWC Access provided in "Exercise 0".
@@ -122,7 +122,8 @@ Do this for both tables. This will increase the performance of your data and vis
 ### Check remote queries (optional)
 You can check the remote queries in the data integration monitor (Tab: remote query monitor). You can see the statement DWC sends to the remote source.
 
-
+## Exercise 1.4 - Import table from SAP S/4 HANA
+## Exercise 1.5 - Import CSVs
 
 
 ## Summary
