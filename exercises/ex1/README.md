@@ -1,11 +1,10 @@
 # Exercise 1 - Get external Data: German Car Sales Data
 
-There are 3 different ways to load data into the SAP Data Warehouse Cloud. 
-You can choose either of 2 to load the needed data. Uploading the manufacturer data by csv upload will be the next step for both.
-If you use the “learning experience systems” use the second possibility!
+There are 4 different ways to load data into the SAP Data Warehouse Cloud. 
+You can choose either of 3 to load the needed data.
 
 ## Exercise 1.1 - Via Data Market Place (optional, not available in Learning Experience systems)
-Skip this if you use the DWC Access provided in "Exercise 0".
+Skip this, if you use the DWC Access provided in "Exercise 0".
 
 1.	Open Data Market Place –> Landing Page.
 ![Data Market Place](/exercises/ex1/images/Picture2.png)
