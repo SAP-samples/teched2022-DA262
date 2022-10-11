@@ -35,38 +35,38 @@ a) The logs of the installation can be found in the Data Market Place -> My Data
 ![Goto the Data Market Place](/exercises/ex1/images/Picture7.png)
 Check all three tabs (My Product, Updates and Delivery Tracking) for information on your data delivery.
 
-![Get Data Product](/exercises/ex1/images/Picture8.png)
+![Get Data Product](/exercises/ex1/images/Picture9.png)
 The data product you just downloaded will be shown as Status: "Success" if everything went well. 
 
-![Get Data Product](/exercises/ex1/images/Picture9.png) 
+![Get Data Product](/exercises/ex1/images/Picture10.png) 
 It will show “failed”, if a problem occurred e.g. not enough storage. 
 
-![Get Data Product](/exercises/ex1/images/Picture10.png)
+![Get Data Product](/exercises/ex1/images/Picture11.png)
 If the Status is signified as “downloading”, you will have to wait a moment longer as the data product is not ready yet.
 
 
 b) You can also have a look into your space and see the table with data. (xxx)
-![Get Data Product](/exercises/ex1/images/Picture11.png)
+![Get Data Product](/exercises/ex1/images/Picture12.png)
 
 ## Exercise 1.2 - External Connection
 As the Data Market Place is not available in learning experience systems, we provided the data through an external connection.
 
 1. Click on "Connection".
-![Get Data Product](/exercises/ex1/images/Picture12.png)
-Choose “Create”.  
 ![Get Data Product](/exercises/ex1/images/Picture13.png)
+Choose “Create”.  
+![Get Data Product](/exercises/ex1/images/Picture14.png)
 2.	Create an Amazon Athena Connection. 
 Click on “Amazon Athena”.
-![Get Data Product](/exercises/ex1/images/Picture14.png)
-
 ![Get Data Product](/exercises/ex1/images/Picture15.png)
+
+![Get Data Product](/exercises/ex1/images/Picture16.png)
 Fill in form with the following data:
 Region: eu-central-1
 Workgroup: primary
 Access Key: AKIA5ZWR7FEGCJ3O4GGN
 Secret Key: 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
  
-![Get Data Product](/exercises/ex1/images/Picture16.png)
+![Get Data Product](/exercises/ex1/images/Picture17.png)
 Click on “Next Step”.
 Enter a Business Name, a Technical Name and a Description. The Technical Name must be ATHENA, if you want to export your space!
 3. Validate Connection
