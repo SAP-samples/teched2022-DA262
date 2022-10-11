@@ -34,15 +34,19 @@ There are two ways of checking the acquisition of data.
 a) The logs of the installation can be found in the Data Market Place -> My Data Products. 
 
 ![Goto the Data Market Place](/exercises/ex1/images/Picture7.png)
+
 Check all three tabs (My Product, Updates and Delivery Tracking) for information on your data delivery.
 
 ![Get Data Product](/exercises/ex1/images/Picture9.png)
+
 The data product you just downloaded will be shown as Status: "Success" if everything went well. 
 
 ![Get Data Product](/exercises/ex1/images/Picture10.png) 
+
 It will show “failed”, if a problem occurred e.g. not enough storage. 
 
 ![Get Data Product](/exercises/ex1/images/Picture11.png)
+
 If the Status is signified as “downloading”, you will have to wait a moment longer as the data product is not ready yet.
 
 
