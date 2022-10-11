@@ -72,13 +72,13 @@ Click on “Amazon Athena”.
 
 ![Get Data Product](/exercises/ex1/images/Picture16.png)
 
-'''
+
 Fill in form with the following data:
-Region: eu-central-1
-Workgroup: primary
-Access Key: AKIA5ZWR7FEGCJ3O4GGN
-Secret Key: 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
-'''
+* Region: eu-central-1
+* Workgroup: primary
+* Access Key: AKIA5ZWR7FEGCJ3O4GGN
+* Secret Key: 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
+
 
 ![Get Data Product](/exercises/ex1/images/Picture17.png)
 
