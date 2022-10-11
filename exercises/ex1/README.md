@@ -64,33 +64,34 @@ Click on “Next Step”.
 Enter a Business Name, a Technical Name and a Description. The Technical Name must be ATHENA, if you want to export your space!
 3. Validate Connection
 Choose your connection and click on validate.
-![Get Data Product](/exercises/ex1/images/Picture17.png)
-If you successfully created the connection, this should pop up: 
 ![Get Data Product](/exercises/ex1/images/Picture18.png)
+If you successfully created the connection, this should pop up: 
+![Get Data Product](/exercises/ex1/images/Picture19.png)
 
 ## Exercise 1.3 - Import Remote Table
 Import the tables from AWS.
 1. Click on Data Builder. Click the "Import-Button" and choose "Import Remote Table".
-![Get Data Product](/exercises/ex1/images/Picture19.png)
-Choose the Athena connection you just created and click on "Next Step".
 ![Get Data Product](/exercises/ex1/images/Picture20.png)
-Click on dwc-data-challenge and choose the tables "rt_car_manufacturer" and "rt_german_car_registration". Choose "Next Step" and check that the tables are ready for import. Click on "import and deploy" to finish importing the tables.
+Choose the Athena connection you just created and click on "Next Step".
 ![Get Data Product](/exercises/ex1/images/Picture21.png)
+Click on dwc-data-challenge and choose the tables "rt_car_manufacturer" and "rt_german_car_registration". Choose "Next Step" and check that the tables are ready for import. Click on "import and deploy" to finish importing the tables.
+![Get Data Product](/exercises/ex1/images/Picture22.png)
 
 ### Create Snapshot (Optional)
 When creating a snapshot, you are replicating the table from AWS to a persistent table on the DWC system. 
 Go into the Data Integration Monitor. 
- 
+
+![Get Data Product](/exercises/ex1/images/Picture23.png)
+
 Choose one of the remote tables. Click on “Table replication” and choose “Load new Snapshot”.
- 
-Do this for both tables.
-(xxx why do I need this?)
-Check remote queries (optional)
-You can check the remote queries in the data integration monitor under the tab remote query monitor. There you can see the statement DWC has send to the remote source.
 
+![Get Data Product](/exercises/ex1/images/Picture24.png)
 
- 
-(to be deleted)
+Do this for both tables. This will increase the performance of your data and visualization.
+
+### Check remote queries (optional)
+You can check the remote queries in the data integration monitor (Tab: remote query monitor). You can see the statement DWC sends to the remote source.
+
 
 ## Exercise 1.4 - Import table from SAP S/4 HANA
 
