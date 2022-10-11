@@ -47,42 +47,60 @@ If the Status is signified as “downloading”, you will have to wait a moment 
 
 
 b) You can also have a look into your space and see the table with data. (xxx)
+
 ![Get Data Product](/exercises/ex1/images/Picture12.png)
 
 ## Exercise 1.2 - External Connection
 As the Data Market Place is not available in learning experience systems, we provided the data through an external connection.
 
 1. Click on "Connection".
+
 ![Get Data Product](/exercises/ex1/images/Picture13.png)
+
 Choose “Create”.  
+
 ![Get Data Product](/exercises/ex1/images/Picture14.png)
+
 2.	Create an Amazon Athena Connection. 
 Click on “Amazon Athena”.
+
 ![Get Data Product](/exercises/ex1/images/Picture15.png)
 
 ![Get Data Product](/exercises/ex1/images/Picture16.png)
+
+'''
 Fill in form with the following data:
 Region: eu-central-1
 Workgroup: primary
 Access Key: AKIA5ZWR7FEGCJ3O4GGN
 Secret Key: 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
- 
+'''
+
 ![Get Data Product](/exercises/ex1/images/Picture17.png)
+
 Click on “Next Step”.
 Enter a Business Name, a Technical Name and a Description. The Technical Name must be ATHENA, if you want to export your space!
 3. Validate Connection
 Choose your connection and click on validate.
+
 ![Get Data Product](/exercises/ex1/images/Picture18.png)
+
 If you successfully created the connection, this should pop up: 
+
 ![Get Data Product](/exercises/ex1/images/Picture19.png)
 
 ## Exercise 1.3 - Import Remote Table
 Import the tables from AWS.
 1. Click on Data Builder. Click the "Import-Button" and choose "Import Remote Table".
+
 ![Get Data Product](/exercises/ex1/images/Picture20.png)
+
 Choose the Athena connection you just created and click on "Next Step".
+
 ![Get Data Product](/exercises/ex1/images/Picture21.png)
+
 Click on dwc-data-challenge and choose the tables "rt_car_manufacturer" and "rt_german_car_registration". Choose "Next Step" and check that the tables are ready for import. Click on "import and deploy" to finish importing the tables.
+
 ![Get Data Product](/exercises/ex1/images/Picture22.png)
 
 ### Create Snapshot (Optional)
