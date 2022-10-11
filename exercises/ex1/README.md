@@ -10,10 +10,13 @@ Skip this if you use the DWC Access provided in "Exercise 0".
 1.	Open Data Market Place –> Landing Page.
 ![Data Market Place](/exercises/ex1/images/Picture2.png)
 2.	Find “Car Registrations Germany - Q1.2022 – Kraftfahrtbundesamt”
+
 ![Data Product](/exercises/ex1/images/Picture3.png)
 3.	Click on the button “Load for Free”.
+
 ![Get Data Product](/exercises/ex1/images/Picture4.png)
-5.	Select your Space and click “Load Product.”
+4.	Select your Space and click “Load Product.”
+
 ![Choose a space](/exercises/ex1/images/Picture5.png)
 
 ![Get Data Product](/exercises/ex1/images/Picture6.png)
@@ -21,19 +24,24 @@ Skip this if you use the DWC Access provided in "Exercise 0".
 ### Check the installation 
 There are two ways of checking the acquisition of data. 
 a) The logs of the installation can be found in the Data Market Place -> My Data Products. 
+
 ![Goto the Data Market Place](/exercises/ex1/images/Picture7.png)
 Check all three tabs (My Product, Updates and Delivery Tracking) for information on your data delivery.
+
 ![Get Data Product](/exercises/ex1/images/Picture8.png)
 The data product you just downloaded will be shown as Status: "Success" if everything went well. 
+
 ![Get Data Product](/exercises/ex1/images/Picture9.png) 
 It will show “failed”, if a problem occurred e.g. not enough storage. 
+
 ![Get Data Product](/exercises/ex1/images/Picture10.png)
 If the Status is signified as “downloading”, you will have to wait a moment longer as the data product is not ready yet.
+
 
 b) You can also have a look into your space and see the table with data. (xxx)
 ![Get Data Product](/exercises/ex1/images/Picture11.png)
 
-## Exercise 1.1 - External Connection
+## Exercise 1.2 - External Connection
 As the Data Market Place is not available in learning experience systems, we provided the data through an external connection.
 
 1. Click on "Connection".
@@ -60,7 +68,7 @@ Choose your connection and click on validate.
 If you successfully created the connection, this should pop up: 
 ![Get Data Product](/exercises/ex1/images/Picture18.png)
 
-### Import Remote Table
+## Exercise 1.3 - Import Remote Table
 Import the tables from AWS.
 1. Click on Data Builder. Click the "Import-Button" and choose "Import Remote Table".
 ![Get Data Product](/exercises/ex1/images/Picture19.png)
@@ -83,6 +91,9 @@ You can check the remote queries in the data integration monitor under the tab r
 
  
 (to be deleted)
+
+## Exercise 1.4 - Import table from SAP S/4 HANA
+
 
 
 ## Summary
