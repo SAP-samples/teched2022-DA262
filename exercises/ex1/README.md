@@ -12,6 +12,7 @@ You can choose either of 3 to load the needed data:
 Skip this, if you use the DWC Access provided in "Exercise 0".
 
 1.	Open Data Market Place –> Landing Page.
+
 ![Data Market Place](/exercises/ex1/images/Picture2.png)
 
 2.	Find “Car Registrations Germany - Q1.2022 – Kraftfahrtbundesamt”
