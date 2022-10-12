@@ -8,9 +8,9 @@ To create a reusable model for consumption in SAC you will need to create a mode
 
 ## Exercise 4.1 - Create a Dimension for Product
 To connect the 2 model we first need to find the commonalities. We do this by creating an asscociative dimension.
-1. Click on “New Dimension”. Choose the Dimension you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “next”. <br> ![Test](/exercises/ex4/images/6.png) [Test](/exercises/ex4/images/7.png)
+1. Click on “New Dimension”. Choose the Dimension you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “next”. <br> ![Test](/exercises/ex4/images/6.png) ![Test](/exercises/ex4/images/7.png)
 2. In the next dialog choose “yes” and copy the properties. Click ”next”.
-3. Choose the "Attributes" sheet. Delete the "id" column from your attributes by clicking the "x" behind the entry. <br> [Test](/exercises/ex4/images/8.png) <br> Now you have created a dimension to use in the SAC. You can filter by all the attributes you have just choosen.
+3. Choose the "Attributes" sheet. Delete the "id" column from your attributes by clicking the "x" behind the entry. <br> ![Test](/exercises/ex4/images/8.png) <br> Now you have created a dimension to use in the SAC. You can filter by all the attributes you have just choosen.
 4. Choose the "General" sheet and switch the status to "Ready to Use"
 5. Click "Save".
 
