@@ -73,10 +73,13 @@ Do this for both tables. This will increase the performance of your data and vis
 You can check the remote queries in the data integration monitor (Tab: remote query monitor). You can see the statement DWC sends to the remote source.
 
 ## Exercise 2b - Import CSVs - Get My Companies Sales Data
-1.	Get the Resource Package from git. xxx
-In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please to it know
+
+In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please do it now.
+
+1.	Get the Resource Package from git. The files are in the [DA262_Resource.zip](DA262_Resource.zip) in this GitHub Repo.
+
 2.	Import the Teched2022_DA262.json into your space.
- 
+ how? xxx
 Once completed and the deployment was successful you should see four objects. 
  The objects are a very simplified form of sales reporting. Consisting only out of Sales Data and Product Master Data. The Data comes in through Remote Tables, on top of each remote table is a view, a Dimension View for the master data and an Analytical DataSet view for the sales data. The sales data associate the product dimension. The product dimension has one level-based hierarchy defined uses Group -> Brand -> Model levels. For simplicity there is no customer information in the data, also the time dimension holds only a single day, as it is not important for this exercise. 
  
