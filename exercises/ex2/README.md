@@ -1,4 +1,4 @@
-# Exercise 2 - Get external Data: German Car Sales Data
+# Exercise 2 - Get external Data: German Car Sales Data (mandatory, available in Learning Experience systems)
 
 ## Exercise 2a - External Connection
 As the Data Market Place is not available in learning experience systems, we provided the data through an external connection.
