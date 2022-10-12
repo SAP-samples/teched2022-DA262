@@ -4,11 +4,11 @@ Visit the [SAP Datawarehouse site](https://www.sap.com/products/technology-platf
 
 ![Web site](/exercises/ex0/images/0.png)
 
-Choose "Request demo" and fill out the form.
+Choose "Request demo" and fill out the form. Click submit to get your trail account login data.
 
 ![Web site](/exercises/ex0/images/1.png)
 
-Save your account data and login to your trial account.
+Save your account login data and login to your trial account.
 
 ## Summary
 
