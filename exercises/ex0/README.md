@@ -1,4 +1,4 @@
-# Exercise 0 - Preparations (optional, if you already have access to a DWC tennant)
+# Exercise 0 - Preparations (optional, if you already have access to a SAP DWC tenant)
 
 Visit the [SAP Data Warehouse Cloud website](https://www.sap.com/products/technology-platform/data-warehouse-cloud/trial.html) for a free trial account.
 
