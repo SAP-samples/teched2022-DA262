@@ -1,10 +1,10 @@
-# Exercise 3 - Combine the Data into one view (to be updated)
+# Exercise 3 - Combine the Data into one view (mandatory)
 
 We have two sets of data, which kind of go together, but since they are coming from different sources, they don’t have common key or join criteria’s that could be used to create a seamless set of data. 
 
-Intelligent lookup will provide if the missing link, by creating and filling a mapping table between the two sets of data. 
+Intelligent lookup will provide the missing link, by creating and filling a mapping table between the two sets of data. 
 
-## Add Keys
+## Exercise 3.1 - Add Keys
 The intelligent lookup needs keys in the data sets to join together. Should a Data Set not have a key defined you can add the key by wrapping it into a view. 
 1.	Create a new view
 2.	Add the German_Car_Registration or other table to the view
@@ -16,7 +16,9 @@ The Car Manufacturer table key is: ID
 
 4.	Deploy the view
 5.	Repeat until both sources have a keys. 
-## Create Intelligent Lookup
+
+## Exercise 3.2 - Create Intelligent Lookup
+
 1.	New Intelligent lookup. 
 
 ![Data Market Place](/exercises/ex2/images/Picture29.png)
@@ -88,7 +90,7 @@ The unmatched can be matched similarly.
 “VW” as Marke corresponds to Vokswagen in the Brand field 
 The 19 in brackets on the left hand side indicate how many records in the Germany Car Registration Data have the Marke (Brand) “VW”. By mapping that we will map additional 5% of the records.
   
-### Check the generated Data Set
+### Exercise 3.3 - Check the generated Data Set
 
 1.	Open a new graphical view 
 2.	Pull in the Intelligent Lookup you created. 
@@ -101,5 +103,6 @@ The data shows records of German Car Registration but you can see that the data 
 ## Summary
 
 You've now ...
+created a common key to connect the different data tables.
 
 Continue to - [Exercise 4 - Create a Consumption Model in the Business Layer](../ex4/README.md)
