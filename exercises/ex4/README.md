@@ -1,6 +1,6 @@
-# Create a Consumption Model in the Business Layer 
+# Exercise 3 - Create a Consumption Model in the Business Layer 
 To create a reusable model for consumption in SAC you will need to create a model in the Business Layer. We will create 2 models and connect them via a multifact model.
-## Create a Dimension for Product
+## Exercise 3.1 - Create a Dimension for Product
 To connect the 2 model we first need to find the commonalities. We do this by creating an asscociative dimension.
 1. Click on “New Dimension”. Choose the Dimension you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “next”.
 2. In the next dialog choose “yes” and copy the properties. Click ”next”.
