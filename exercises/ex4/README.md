@@ -1,7 +1,10 @@
 # Exercise 3 - Create a Consumption Model in the Business Layer 
 To create a reusable model for consumption in SAC you will need to create a model in the Business Layer. We will create 2 models and connect them via a multifact model.
-- Exercise 3.1 - Create a Dimension for Product
-- Exercise 3.2 - Create Analytical DataSet for My Company Sales (Add association)
+- [Exercise 3.1 - Create a Dimension for Product](#exercise-31---create-a-dimension-for-product)
+- [Exercise 3.2 - Create Analytical Dataset for KBA](#exercise-32---create-analytical-dataset-for-kba)
+- [Exercise 3.3 - Create Analytical DataSet for My Company Sales (Add association)](#exercise-33---create-analytical-dataset-for-my-company-sales-add-association)
+- [Exercise 3.4 - Create Multifact Consumption Model (KBA and Sales)](#exercise-33---create-analytical-dataset-for-my-company-sales-add-association)
+- [Exercise 3.5 - Create (Calculated) Key Figures)](#exercise-35---create-calculated-key-figures)
 
 ## Exercise 3.1 - Create a Dimension for Product
 To connect the 2 model we first need to find the commonalities. We do this by creating an asscociative dimension.
@@ -10,7 +13,8 @@ To connect the 2 model we first need to find the commonalities. We do this by cr
 3. Choose the "Attributes" sheet. Delete the "id" column from your attributes by clicking the "x" behind the entry.  (what are these attributes used for?)
 4. Choose the "General" sheet and switch the status to "Ready to Use"
 5. Click "Save".
-## Create Analytical Dataset for KBA
+
+## Exercise 3.2 - Create Analytical Dataset for KBA
 Now we have to create an Analytical Dataset for KBA.
 1. To create an new Analytical Dataset, click "New Analytical Dataset". <br> ![Test](/exercises/ex4/images/9.png)
 2. Choose the Analytical Dataset you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “Create”. <br> ![Image](/exercises/ex4/images/10a.png 'Test')
@@ -35,7 +39,9 @@ To give a common denominator between two different Models you need to choose a d
 ![Test](/exercises/ex4/images/19.png)<br>
 13. Choose the "General" sheet and switch the status to "Ready to Use"
 14. Click "Save".
-## Create Analytical DataSet for My Company Sales (Add association)
+
+## Exercise 3.3 - Create Analytical DataSet for My Company Sales (Add association)
+
 Repeat the above procedures for "My Company Sales".
 1. Add a new Analytical Dataset. <br>
 ![Test](/exercises/ex4/images/9.png)<br>
@@ -56,7 +62,7 @@ Don't forget to verify your keys.<br>
 6. Set your status to "Ready to use".<br>
 ![Test](/exercises/ex4/images/28.png)<br>
 
-## Exercise 3.2 - Create Multifact Consumption Model (KBA and Sales)
+## Exercise 3.4 - Create Multifact Consumption Model (KBA and Sales)
 
 1. Create a new Consumption Model. <br>
 ![Test](/exercises/ex4/images/29.png)<br>
@@ -91,29 +97,31 @@ Click on the Sales Model and click on the "Expand"-Button. <br>
 ![Test](/exercises/ex4/images/46.png) <br>
 14. Click on "Create". <br>
 ![This is how the model should look now](/exercises/ex4/images/48.png) <br>
-## Create (Calculated) Key Figures  <br>
-15. Now add the Measures (BEV, Cabriolets, Sales Unit, All).  <br>
+
+## Exercise 3.5 - Create (Calculated) Key Figures
+
+1. Now add the Measures (BEV, Cabriolets, Sales Unit, All).  <br>
 ![Test](/exercises/ex4/images/49a.png) <br>
-16. Next we add a calculated measure. Add a measure and choose "Calculated Measure".  <br>
+2. Next we add a calculated measure. Add a measure and choose "Calculated Measure".  <br>
 ![Test](/exercises/ex4/images/50.png) <br>
-17. Create the calculation for market share. <br>
+3. Create the calculation for market share. <br>
 ![Test](/exercises/ex4/images/51.png) <br>
 Divide "Sales Unit" by "All Vehicles". And click "Save". <br>
 ![Test](/exercises/ex4/images/52.png) <br>
 ![This is all measures that we just created.](/exercises/ex4/images/52.png) <br>
-18. Now we have to create the attributes, the model will be filtered by (Brand, Group, Model, Orign).  <br>
+4. Now we have to create the attributes, the model will be filtered by (Brand, Group, Model, Orign).  <br>
 ![Test](/exercises/ex4/images/53.png) <br>
 ![Test](/exercises/ex4/images/54.png) <br>
 ![Test](/exercises/ex4/images/55.png) <br>
-19. Go to the "General" sheet and check the "Allow public data access" box. Then click "Save".  <br>
+5. Go to the "General" sheet and check the "Allow public data access" box. Then click "Save".  <br>
 ![Test](/exercises/ex4/images/56.png) <br>
 Now there should be a green check in the right upper corner. If there is a red cross something went wrong. Please check the failure message. <br>
 ![Test](/exercises/ex4/images/57.png) <br>
-20. To create a story based on this Fact Model, you need to create a perspective. You can either do this by clicking the "+"-Button or by clicking on the "Data Preview". Click on the "Data Preview". <br>
+6. To create a story based on this Fact Model, you need to create a perspective. You can either do this by clicking the "+"-Button or by clicking on the "Data Preview". Click on the "Data Preview". <br>
 ![Test](/exercises/ex4/images/58.png) <br>
-21. Create a table to base your perspective on by drag-and-drop.  <br>
+7. Create a table to base your perspective on by drag-and-drop.  <br>
 ![Test](/exercises/ex4/images/59.png)  <br>
-22. Click "Save New" and enter a name. <br>
+8. Click "Save New" and enter a name. <br>
 ![Test](/exercises/ex4/images/60.png) <br>
 
 ## Summary
