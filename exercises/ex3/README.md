@@ -1,4 +1,4 @@
-# Exercise 2 - Combine the Data into one view (to be updated)
+# Exercise 3 - Combine the Data into one view (to be updated)
 
 We have two sets of data, which kind of go together, but since they are coming from different sources, they don’t have common key or join criteria’s that could be used to create a seamless set of data. 
 
@@ -102,4 +102,4 @@ The data shows records of German Car Registration but you can see that the data 
 
 You've now ...
 
-Continue to - [Exercise 4 - Excercise 3 ](../ex4/README.md)
+Continue to - [Exercise 4 - Create a Consumption Model in the Business Layer](../ex4/README.md)
