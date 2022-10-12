@@ -1,12 +1,12 @@
-# Exercise 3 - Create a Consumption Model in the Business Layer 
+# Exercise 4 - Create a Consumption Model in the Business Layer 
 To create a reusable model for consumption in SAC you will need to create a model in the Business Layer. We will create 2 models and connect them via a multifact model.
-- [Exercise 3.1 - Create a Dimension for Product](#exercise-31---create-a-dimension-for-product)
-- [Exercise 3.2 - Create Analytical Dataset for KBA](#exercise-32---create-analytical-dataset-for-kba)
-- [Exercise 3.3 - Create Analytical DataSet for My Company Sales (Add association)](#exercise-33---create-analytical-dataset-for-my-company-sales-add-association)
-- [Exercise 3.4 - Create Multifact Consumption Model (KBA and Sales)](#exercise-33---create-analytical-dataset-for-my-company-sales-add-association)
-- [Exercise 3.5 - Create (Calculated) Key Figures)](#exercise-35---create-calculated-key-figures)
+- [Exercise 4.1 - Create a Dimension for Product](#exercise-41---create-a-dimension-for-product)
+- [Exercise 4.2 - Create Analytical Dataset for KBA](#exercise-42---create-analytical-dataset-for-kba)
+- [Exercise 4.3 - Create Analytical DataSet for My Company Sales (Add association)](#exercise-43---create-analytical-dataset-for-my-company-sales-add-association)
+- [Exercise 4.4 - Create Multifact Consumption Model (KBA and Sales)](#exercise-44---create-multifact-consumption-model-kba-and-sales))
+- [Exercise 4.5 - Create (Calculated) Key Figures)](#exercise-45---create-calculated-key-figures)
 
-## Exercise 3.1 - Create a Dimension for Product
+## Exercise 4.1 - Create a Dimension for Product
 To connect the 2 model we first need to find the commonalities. We do this by creating an asscociative dimension.
 1. Click on “New Dimension”. Choose the Dimension you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “next”.
 2. In the next dialog choose “yes” and copy the properties. Click ”next”.
@@ -14,7 +14,7 @@ To connect the 2 model we first need to find the commonalities. We do this by cr
 4. Choose the "General" sheet and switch the status to "Ready to Use"
 5. Click "Save".
 
-## Exercise 3.2 - Create Analytical Dataset for KBA
+## Exercise 4.2 - Create Analytical Dataset for KBA
 Now we have to create an Analytical Dataset for KBA.
 1. To create an new Analytical Dataset, click "New Analytical Dataset". <br> ![Test](/exercises/ex4/images/9.png)
 2. Choose the Analytical Dataset you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “Create”. <br> ![Image](/exercises/ex4/images/10a.png 'Test')
@@ -40,7 +40,7 @@ To give a common denominator between two different Models you need to choose a d
 13. Choose the "General" sheet and switch the status to "Ready to Use"
 14. Click "Save".
 
-## Exercise 3.3 - Create Analytical DataSet for My Company Sales (Add association)
+## Exercise 4.3 - Create Analytical DataSet for My Company Sales (Add association)
 
 Repeat the above procedures for "My Company Sales".
 1. Add a new Analytical Dataset. <br>
@@ -62,7 +62,7 @@ Don't forget to verify your keys.<br>
 6. Set your status to "Ready to use".<br>
 ![Test](/exercises/ex4/images/28.png)<br>
 
-## Exercise 3.4 - Create Multifact Consumption Model (KBA and Sales)
+## Exercise 4.4 - Create Multifact Consumption Model (KBA and Sales)
 
 1. Create a new Consumption Model. <br>
 ![Test](/exercises/ex4/images/29.png)<br>
@@ -98,7 +98,7 @@ Click on the Sales Model and click on the "Expand"-Button. <br>
 14. Click on "Create". <br>
 ![This is how the model should look now](/exercises/ex4/images/48.png) <br>
 
-## Exercise 3.5 - Create (Calculated) Key Figures
+## Exercise 4.5 - Create (Calculated) Key Figures
 
 1. Now add the Measures (BEV, Cabriolets, Sales Unit, All).  <br>
 ![Test](/exercises/ex4/images/49a.png) <br>
