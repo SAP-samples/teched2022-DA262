@@ -21,7 +21,7 @@ MyCompany provides fleet management services for large enterprise customers. The
 - Google Chrome
 - Access to this GitHub repository
 - Access to a SAP Data Warehouse Cloud tennant [Link to a guided experience trial system of SAP Data Warehouse Cloud](https://www.example.com)
-- the files in the download folder [DA262_Resource.zip](DA262_Resource.zip) from this GitHub Repo (xxx)
+- The files in the download folder [DA262_Resource.zip](DA262_Resource.zip) from this GitHub Repo (xxx)
 
 ## Exercises
 
