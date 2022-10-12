@@ -55,6 +55,16 @@ b) You can also have a look into your space and see the table with data. (xxx)
 
 ![Get Data Product](/exercises/ex1/images/Picture12.png)
 
+## Exercise 1.2 - Import CSVs
+
+Upload your data directly. This can make sense if your tenant does not have any sources connected to it. 
+
+1. Navigate to the Data Builder.
+2. Choose "Import CSV File". <br> ![Get Data Product](/exercises/ex1/images/3.png) <br>
+3. Choose your file and click "Upload". <br> ![Get Data Product](/exercises/ex1/images/4.png) <br>
+4. Check that the data types were correctly detected and click on "Deploy". <br> ![Get Data Product](/exercises/ex1/images/5.png) <br>
+5. Repeat these steps for all your files. 
+
 ## Exercise 1.2 - Import table from SAP S/4 HANA
 
 
