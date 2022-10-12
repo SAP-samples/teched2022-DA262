@@ -9,7 +9,7 @@ To connect the 2 model we first need to find the commonalities. We do this by cr
 5. Click "Save".
 ## Create Analytical Dataset for KBA
 Now we have to create an Analytical Dataset for KBA.
-1. To create an new Analytical Dataset, click "New Analytical Dataset". ![Test](/exercises/ex4/images/9.png)
+1. To create an new Analytical Dataset, click "New Analytical Dataset". <br> ![Test](/exercises/ex4/images/9.png)
 2. Choose the Analytical Dataset you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “Create”. ![Image](/exercises/ex4/images/10a.png 'Test')
 3. In the next dialog choose “yes” and copy the properties. Click ”Create”.
 4. Choose the "Key definitions" sheet and add a new definition.
