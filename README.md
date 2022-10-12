@@ -9,10 +9,10 @@ This session is called "DA262 - Modeling External and SAP Software Data in SAP D
 This hands-on workshop will give you the opportunity to build a scenario with exercises for SAP Data Warehouse Cloud and SAP Analytics Cloud. Find out how the SAP Data Warehouse Cloud solution helps the line-of-business user get the job done. Discover flexible connection features, and learn how you can access data from different sources. Create an extendable business semantic model in an agile way, and connect analytics and visualization components in the context of a data warehouse.
 
 ## Introduction
-Goal: Learn how to join messy data without keys from multiple sources.
-Provided data tables: (link to be added)
-Finished Product: This Dashboard showing number of cars by manufacturer by county/state.
-Tags: #dwc #IntelligentLookUp #IL #DataMarketplace
+* Goal: Learn how to join messy data without keys from multiple sources.
+* Provided data tables: (link to be added)
+* Finished Product: This Dashboard showing number of cars by manufacturer by county/state.
+* Tags: #dwc #IntelligentLookUp #IL #DataMarketplace
 
 ## Scenario
 MyCompany provides fleet management services for large enterprise customers. They are organizing the procurement of cars from multiple manufacturers for their customers. They would like to understand where there is potential for additional car sales with their existing customer base. Their goal is to achieve a 20% market share. Today's question to answer is, for which brands is the share under the target share. 
