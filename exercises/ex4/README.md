@@ -45,7 +45,7 @@ To give a common denominator between two different Models you need to choose a d
 Repeat the above procedures for "My Company Sales".
 1. Add a new Analytical Dataset. <br>
 ![Test](/exercises/ex4/images/9.png)<br>
-2. Choose a name.
+2. Choose a name. <br>
 ![Test](/exercises/ex4/images/20.png)<br>
 3. Choose your measure (Sales Unit). <br>
 ![Test](/exercises/ex4/images/21.png)<br>
