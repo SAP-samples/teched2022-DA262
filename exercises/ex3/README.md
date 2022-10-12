@@ -90,7 +90,7 @@ The unmatched can be matched similarly.
 “VW” as Marke corresponds to Vokswagen in the Brand field 
 The 19 in brackets on the left hand side indicate how many records in the Germany Car Registration Data have the Marke (Brand) “VW”. By mapping that we will map additional 5% of the records.
   
-### Exercise 3.3 - Check the generated Data Set
+### Check the generated Data Set
 
 1.	Open a new graphical view 
 2.	Pull in the Intelligent Lookup you created. 
