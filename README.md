@@ -7,6 +7,8 @@ This session is called "DA262 - Modeling External and SAP Software Data in SAP D
 ## Overview
 This hands-on workshop will give you the opportunity to build a scenario with exercises for SAP Data Warehouse Cloud and SAP Analytics Cloud. Find out how the SAP Data Warehouse Cloud solution helps the line-of-business user get the job done. Discover flexible connection features, and learn how you can access data from different sources. Create an extendable business semantic model in an agile way, and connect analytics and visualization components in the context of a data warehouse.
 
+xxx add structure pic xxx
+
 * Goal: Learn how to join messy data without keys from multiple sources.
 * Provided data tables: (link to be added)
 * Finished Product: This Dashboard showing number of cars by manufacturer by county/state.
