@@ -12,7 +12,7 @@ This hands-on workshop will give you the opportunity to build a scenario with ex
 * Goal: Learn how to join messy data without keys from multiple sources.
 * Provided data tables: (link to be added)
 * Finished Product: This Dashboard showing number of cars by manufacturer by county/state.
-* Tags: #dwc #IntelligentLookUp #IL #DataMarketplace
+* Tags: #dwc #IntelligentLookUp #IL #DataMarketplace #BusinessLayer #DataMarketplace #SAP
 
 ## Scenario
 MyCompany provides fleet management services for large enterprise customers. They are organizing the procurement of cars from multiple manufacturers for their customers. They would like to understand where there is potential for additional car sales with their existing customer base. Their goal is to achieve a 20% market share. Today's question to answer is, for which brands is the share under the target share. 
