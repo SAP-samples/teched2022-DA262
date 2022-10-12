@@ -130,14 +130,10 @@ In the resource package, you can find the data in CSV files and models in JSON. 
  
 Once completed and the deployment was successful you should see four objects. 
  The objects are a very simplified form of sales reporting. Consisting only out of Sales Data and Product Master Data. The Data comes in through Remote Tables, on top of each remote table is a view, a Dimension View for the master data and an Analytical DataSet view for the sales data. The sales data associate the product dimension. The product dimension has one level-based hierarchy defined uses Group -> Brand -> Model levels. For simplicity there is no customer information in the data, also the time dimension holds only a single day, as it is not important for this exercise. 
-# Combine the Data into one view (to be updated)
+ 
+# Combine the data into one view (to be updated)
 
 We have two sets of data, which kind of go together, but since they are coming from different sources, they don’t have common key or join criteria’s that could be used to create a seamless set of data. 
-
-## Summary
-
-You've now ...
-
 
 1.	Get the Resource Package from git. xxx
 In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please do it now.
@@ -146,4 +142,7 @@ In the resource package, you can find the data in CSV files and models in JSON. 
 Once completed and the deployment was successful you should see four objects. 
  The objects are a very simplified form of sales reporting. Consisting only out of Sales Data and Product Master Data. The Data comes in through Remote Tables, on top of each remote table is a view, a Dimension View for the master data and an Analytical DataSet view for the sales data. The sales data associate the product dimension. The product dimension has one level-based hierarchy defined uses Group -> Brand -> Model levels. For simplicity there is no customer information in the data, also the time dimension holds only a single day, as it is not important for this exercise. 
 
+## Summary
+
+You've now ...
 Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
