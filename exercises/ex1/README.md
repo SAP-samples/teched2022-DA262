@@ -1,6 +1,7 @@
 # Exercise 1 - Get external Data: German Car Sales Data (optional)
 
-There are 4 different ways to load data into the SAP Data Warehouse Cloud. 
+There are a lot of different ways to load data into the SAP Data Warehouse Cloud. If you are not using the trial system, you can use these instructions. 
+These will show you all other ways to load the data into the SAP DWC.
 
 - [Exercise 1.1 - Via Data Market Place (optional, not available in Learning Experience systems)](#exercise-11---via-data-market-place-optional-not-available-in-learning-experience-systems)
 - [Exercise 1.2 - External Connection](#exercise-12---external-connection)
