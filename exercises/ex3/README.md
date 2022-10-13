@@ -1,5 +1,7 @@
 # Exercise 3 - Combine the Data into one view (mandatory)
 
+The objects are a very simplified form of sales reporting. Consisting only out of Sales Data and Product Master Data. The Data comes in through Remote Tables, on top of each remote table is a view, a Dimension View for the master data and an Analytical DataSet view for the sales data. The sales data associate the product dimension. The product dimension has one level-based hierarchy defined uses Group -> Brand -> Model levels. For simplicity there is no customer information in the data, also the time dimension holds only a single day, as it is not important for this exercise. 
+
 We have two sets of data, which kind of go together, but since they are coming from different sources, they don’t have common key or join criteria’s that could be used to create a seamless set of data. 
 
 Intelligent lookup will provide the missing link, by creating and filling a mapping table between the two sets of data. 
