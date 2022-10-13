@@ -1,7 +1,17 @@
+# Introduction
 In this exercise get to know and import all necessary data. This consists of: 
 - Internal Data
--- MyCompany Sales - represents daily sales in units per product of the MyCompany business
--- 
+    - MyCompany Sales - represents daily sales in units per product of the *MyCompany* business
+    - MyCompany Products - Product Master of the *MyCompany* business 
+- External data
+    - German Car Registrations - Monthly car registrations in Germany by model & brand 
+
+# How to load the data
+Normally, your sales data and product masters would be original in your S/4 system and be loaded into SAP Data Warehouse Cloud as part of your normal modelling work. External data is best found and integrated using [SAP Data Marketplace](https://blogs.sap.com/2021/12/13/sap-data-warehouse-cloud-data-marketplace-an-overview/), which itself is an integral part of SAP Data Warehouse Cloud. Once all data has been loaded, the data harmonization, modelling & reporting steps would be performed
+
+In the context of this TechEd workshop, our main aim is we focus primarily on the harmonization, modelling & reporting steps. We'd like to showcase SAP Data Marketplace as well, but since it is not available in the DWC Guided Experience systems, we can only point you to background information (TODO doc and link) on it. The rest of the data integration to SAP Data Warehouse Cloud is amply covered in TechEd workshop DA160 (TODO link) and we are therefore decided to take a shortcut on the data integration bits. If you are interested to learn more on alternative ways of integrating the workshop data into SAP Data Warehouse Cloud (e.g. into your own tenant outside Guided Experience, please follow this link (**TODO link**)) data integration in the context , please  need to   and thus are taking a shortcut on the data loading parts. This is why you'll load all data simply from the connected HANA cloud system 
+
+- show you how easy data integration we , our focus is primarily on the modelling side of the house and not on the data loading. So we decided to make data loading as simple as possible by not on the data loading
 # Skip Steps
 
 - [Exercise 1.1 - Import CSVs](#exercise-11---import-csvs)
