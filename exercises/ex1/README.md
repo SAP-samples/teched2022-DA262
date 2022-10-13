@@ -1,7 +1,4 @@
-# Exercise 1B - Get external Data: German Car Sales Data (optional)
-
-There are a lot of different ways to load data into the SAP Data Warehouse Cloud. If you are not using the trial system, you can use these instructions. 
-These will show you all other ways to load the data into the SAP DWC.
+# Skip Steps
 
 - [Exercise 1.1 - Import CSVs](#exercise-11---import-csvs)
 - [Exercise 1.1 - Via Data Market Place (optional, not available in Learning Experience systems)]([#exercise-11---via-data-market-place)
@@ -51,6 +48,12 @@ In the resource package, you can find the data in CSV files and models in JSON. 
 
 ## Exercise 4B - Skip SAC
 This is the last step, if you run out of time just skip it.
+
+
+# Exercise 1B - Get external Data: German Car Sales Data (optional)
+
+There are a lot of different ways to load data into the SAP Data Warehouse Cloud. If you are not using the trial system, you can use these instructions. 
+These will show you all other ways to load the data into the SAP DWC.
 
 ## Exercise 1.1 - Via Data Market Place
 (optional, not available in Learning Experience systems)
