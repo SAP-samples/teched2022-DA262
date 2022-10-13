@@ -10,6 +10,7 @@ This hands-on workshop will give you the opportunity to build a scenario with ex
 xxx add structure pic xxx
 
 * Goal: Learn how to join messy data without keys from multiple sources.
+* Time: 2-4 h
 * Provided data tables: (link to be added)
 * Finished Product: This Dashboard showing number of cars by manufacturer by county/state.
 * Tags: #dwc #IntelligentLookUp #IL #DataMarketplace #BusinessLayer #DataMarketplace #SAP
