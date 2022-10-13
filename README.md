@@ -13,7 +13,7 @@ This hands-on workshop gives you the opportunity to build an end-to-end data int
 * Tags: #dwc #IntelligentLookUp #IL #DataMarketplace #BusinessLayer #DataMarketplace #SAP
 
 ## Scenario
-MyCompany provides fleet management services for large enterprise customers. They are organizing the procurement of cars from multiple manufacturers for their customers. They would like to understand where there is potential for additional car sales with their existing customer base. Their goal is to achieve a 20% market share. Today's question to answer is, for which brands is the share under the target share. 
+_MyCompany_ provides fleet management services for large enterprise customers. They are organizing the procurement of cars from multiple manufacturers for their customers. They would like to understand where there is potential for additional car sales with their existing customer base. Their goal is to achieve a 20% market share. Today's question to answer is, for which brands is the share under the target share. 
 
 ## Pre-Requisites
 - Google Chrome
