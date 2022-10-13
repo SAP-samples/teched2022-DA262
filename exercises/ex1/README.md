@@ -1,3 +1,7 @@
+In this exercise get to know and import all necessary data. This consists of: 
+- Internal Data
+-- MyCompany Sales - represents daily sales in units per product of the MyCompany business
+-- 
 # Skip Steps
 
 - [Exercise 1.1 - Import CSVs](#exercise-11---import-csvs)
