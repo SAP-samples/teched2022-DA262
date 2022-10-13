@@ -1,42 +1,76 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 1A - Get external Data: German Car Sales Data (mandatory, available in Learning Experience systems)
+To get data into the Data Warehouse you have different opportunities and possibilities. <br>
+If you are using the SAP DWC Access obtained in exercise 0, we recommend using the [external connection](#exercise-2a---external-connection). <br>
+[Uploading all files as CSVs](/exercises/ex1/README.md#exercise-11---import-csvs) is the fallback, if you are doing these exercises at a time when trial access is not possible. 
 
-In this exercise, we will create...
+## Create an External Connection
 
-## Exercise 2.1 Sub Exercise 1 Description
+1. Click on "Connection".
 
-After completing these steps you will have created...
+![Get Data Product](/exercises/ex1/images/Picture13.png)
 
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
+Choose “Create”.  
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
-```
+![Get Data Product](/exercises/ex1/images/Picture14.png)
 
+2.	Create an Amazon Athena Connection. 
+Click on “Amazon Athena”.
 
+![Get Data Product](/exercises/ex1/images/Picture15.png)
 
-## Exercise 2.2 Sub Exercise 2 Description
+![Get Data Product](/exercises/ex1/images/Picture16.png)
 
-After completing these steps you will have...
+Fill in form with the following data:
+* Region: eu-central-1
+* Workgroup: primary
+* Access Key: AKIA5ZWR7FEGCJ3O4GGN
+* Secret Key: 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
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
+![Get Data Product](/exercises/ex1/images/Picture17.png)
 
-```
+Click on “Next Step”.
+Enter a Business Name, a Technical Name and a Description. The Technical Name must be ATHENA, if you want to export your space!
+3. Validate Connection
+Choose your connection and click on validate.
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+![Get Data Product](/exercises/ex1/images/Picture18.png)
+
+If you successfully created the connection, this should pop up: 
+
+![Get Data Product](/exercises/ex1/images/Picture19.png)
+
+### Import Remote Table
+Import the tables from AWS.
+1. Click on Data Builder. Click the "Import-Button" and choose "Import Remote Table".
+
+![Get Data Product](/exercises/ex1/images/Picture20.png)
+
+Choose the Athena connection you just created and click on "Next Step".
+
+![Get Data Product](/exercises/ex1/images/Picture21.png)
+
+Click on dwc-data-challenge and choose the tables "rt_car_manufacturer" and "rt_german_car_registration". Choose "Next Step" and check that the tables are ready for import. Click on "import and deploy" to finish importing the tables.
+
+![Get Data Product](/exercises/ex1/images/Picture22.png)
+
+### Create Snapshot (Optional)
+When creating a snapshot, you are replicating the table from AWS to a persistent table on the DWC system. 
+Go into the Data Integration Monitor. 
+
+![Get Data Product](/exercises/ex1/images/Picture23.png)
+
+Choose one of the remote tables. Click on “Table replication” and choose “Load new Snapshot”.
+
+![Get Data Product](/exercises/ex1/images/Picture24.png)
+
+Do this for both tables. This will increase the performance of your data and visualization.
+
+### Check remote queries (optional)
+You can check the remote queries in the data integration monitor (Tab: remote query monitor). You can see the statement DWC sends to the remote source.
 
 ## Summary
 
 You've now ...
+We have two sets of data, which kind of go together, but since they are coming from different sources, they don’t have common key or join criteria’s that could be used to create a seamless set of data. 
 
 Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
