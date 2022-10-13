@@ -1,7 +1,7 @@
 # Exercise 1A - Get external Data: German Car Sales Data (mandatory, available in Learning Experience systems)
 To get data into the Data Warehouse you have different opportunities and possibilities. <br>
 If you are using the SAP DWC Access obtained in exercise 0, we recommend using the [external connection](#exercise-2a---external-connection). <br>
-[Uploading all files as CSVs](main/exercises/ex1/README.md#exercise-11---import-csvs) is the fallback, if you are doing these exercises at a time when trial access is not possible. 
+[Uploading all files as CSVs](/exercises/ex1/README.md#exercise-11---import-csvs) is the fallback, if you are doing these exercises at a time when trial access is not possible. 
 
 ## Create an External Connection
 
