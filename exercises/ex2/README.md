@@ -1,11 +1,9 @@
-# Exercise 2 - Get external Data: German Car Sales Data (mandatory, available in Learning Experience systems)
+# Exercise 1A - Get external Data: German Car Sales Data (mandatory, available in Learning Experience systems)
 To get data into the Data Warehouse you have different opportunities and possibilities. <br>
 If you are using the SAP DWC Access obtained in exercise 0, we recommend using the [external connection](#exercise-2a---external-connection). <br>
-[Uploading all files as CSVs](#exercise-2b---import-csvs---get-my-companies-sales-data) is the fall back, if you are doing these exercises at a time when trial access is not possible. 
+[Uploading all files as CSVs](main/exercises/ex1/README.md#exercise-11---import-csvs) is the fallback, if you are doing these exercises at a time when trial access is not possible. 
 
-
-## Exercise 2a - External Connection
-As the Data Market Place is not available in learning experience systems, we provided the data through an external connection.
+## Create an External Connection
 
 1. Click on "Connection".
 
@@ -22,13 +20,11 @@ Click on “Amazon Athena”.
 
 ![Get Data Product](/exercises/ex1/images/Picture16.png)
 
-
 Fill in form with the following data:
 * Region: eu-central-1
 * Workgroup: primary
 * Access Key: AKIA5ZWR7FEGCJ3O4GGN
 * Secret Key: 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
-
 
 ![Get Data Product](/exercises/ex1/images/Picture17.png)
 
@@ -71,23 +67,6 @@ Do this for both tables. This will increase the performance of your data and vis
 
 ### Check remote queries (optional)
 You can check the remote queries in the data integration monitor (Tab: remote query monitor). You can see the statement DWC sends to the remote source.
-
-## Exercise 2b - Import CSVs - Get My Companies Sales Data
-
-In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please do it now.
-
-1.	Get the Resource Package from git. The files are in the [DA262_Resource.zip](DA262_Resource.zip) in this GitHub Repo.
-
-2.	Import the Teched2022_DA262.json into your space.
- how? xxx
-Once completed and the deployment was successful you should see four objects. 
- The objects are a very simplified form of sales reporting. Consisting only out of Sales Data and Product Master Data. The Data comes in through Remote Tables, on top of each remote table is a view, a Dimension View for the master data and an Analytical DataSet view for the sales data. The sales data associate the product dimension. The product dimension has one level-based hierarchy defined uses Group -> Brand -> Model levels. For simplicity there is no customer information in the data, also the time dimension holds only a single day, as it is not important for this exercise. 
- 
-xxx
-1.	Get the Resource Package from git. xxx
-In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please do it now.
-2.	Import the Teched2022_DA262.json into your space.
-xxx
 
 ## Summary
 
