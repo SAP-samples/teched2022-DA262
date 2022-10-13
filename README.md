@@ -1,32 +1,29 @@
 # DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud
 
 ## Description
-This repository contains the material for the SAP TechEd 2022.
-This session is called "DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud".
+This repository contains the material session for *DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud* of SAP TechEd 2022. In the session, a fictional fleet management services company is combining their internal rental data with externally available car registration data to analyze their share in the overall market and identify attractive models & brands in which that market share can be boosted. To participate, you just get yourself a free trial account and follow along. 
 
 ## Overview
-This hands-on workshop will give you the opportunity to build a scenario with exercises for SAP Data Warehouse Cloud and SAP Analytics Cloud. Find out how the SAP Data Warehouse Cloud solution helps the line-of-business user get the job done. Discover flexible connection features, and learn how you can access data from different sources. Create an extendable business semantic model in an agile way, and connect analytics and visualization components in the context of a data warehouse.
-
-xxx add structure pic xxx
+This hands-on workshop gives you the opportunity to build an end-to-end data integration & reporting scenario using SAP Data Warehouse Cloud and SAP Analytics Cloud. You'll learn load data into SAP Data Warehouse Cloud from internal sources, combine it with external data from SAP Data Marketplace, prepare a data model, combine data sets, create an analytical model and finally use it in your reporting in SAP Data Warehouse Cloud
 
 * Goal: Learn how to join messy data without keys from multiple sources.
 * Time: 2-4 h
 * Provided data tables: (link to be added)
-* Finished Product: This Dashboard showing number of cars by manufacturer by county/state.
+* Finished Product: A dashboard showing market share by manufacturer & country
 * Tags: #dwc #IntelligentLookUp #IL #DataMarketplace #BusinessLayer #DataMarketplace #SAP
 
 ## Scenario
-MyCompany provides fleet management services for large enterprise customers. They are organizing the procurement of cars from multiple manufacturers for their customers. They would like to understand where there is potential for additional car sales with their existing customer base. Their goal is to achieve a 20% market share. Today's question to answer is, for which brands is the share under the target share. 
+_MyCompany_ provides fleet management services for large enterprise customers. They are organizing the procurement of cars from multiple manufacturers for their customers. They would like to understand where there is potential for additional car sales with their existing customer base. Their goal is to achieve a 20% market share. Today's question to answer is, for which brands is the share under the target share. 
 
 ## Pre-Requisites
 - Google Chrome
 - Access to this GitHub repository
-- Access to a SAP Data Warehouse Cloud tennant [Link to a guided experience trial system of SAP Data Warehouse Cloud](https://www.example.com)
+- Access to a SAP Data Warehouse Cloud tenant ** exercise link how to get there**
 - The files in the download folder [DA262_Resource.zip](DA262_Resource.zip) from this GitHub Repo (xxx)
 
 ## Exercises
 
-- [Exercise 0 - Preparations (optional, if you  already have access to a DWC tennant)](exercises/ex0/)
+- [Exercise 0 - Preparations (optional, if you  already have access to a DWC tenant)](exercises/ex0/)
 - [Exercise 1 - Get external Data German Car Sales Data](exercises/ex1/)
     - [Exercise 1.1 - via Data Marketplace (not available in Learning Experience systems)](exercises/ex1#exercise-11-sub-exercise-1-description)
     - [Exercise 1.2 - via external connection](exercises/ex1#exercise-12-sub-exercise-2-description)
