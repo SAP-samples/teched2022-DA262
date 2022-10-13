@@ -37,17 +37,20 @@ In the resource package, you can find the data in CSV files and models in JSON. 
 ![Get Data Product](/exercises/ex1/images/2.png)
 5.If successfull, you shoud get a "Success" message and the objects should start appearing in your space.
 
+## Exercise 3B - Skip the Business Builder
 
-## Exercise 3B -
+1. Go to the "Data Builder" and select "New Graphical View".
+2. Join the KBA-VIEW with the MyCompany Sales Dimension.
+3. Join the resulting table to the "MyCompany Sales Data"-View.
+4. Select the resulting view and toggle the "Expose for Consumption"-Switch.
+![Get Data Product](/exercises/ex1/images/002.png)
+5.Give your View a name.
+6. Save and Deploy the new view.
+7. Now change over to the SAC.
+![Get Data Product](/exercises/ex1/images/003.png)
 
-## Exercise 4B -
-
-
-
-
-
-
-
+## Exercise 4B - Skip SAC
+This is the last step, if you run out of time just skip it.
 
 ## Exercise 1.1 - Via Data Market Place
 (optional, not available in Learning Experience systems)
