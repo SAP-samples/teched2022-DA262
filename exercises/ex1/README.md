@@ -65,6 +65,24 @@ Upload your data directly. This can make sense if your tenant does not have any 
 4. Check that the data types were correctly detected and click on "Deploy". <br> ![Get Data Product](/exercises/ex1/images/5.png) <br>
 5. Repeat these steps for all your files. 
 
+**XXX**
+## Skip Step - Get My Companies Sales Data
+
+In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please do it now.
+
+1.	Get the Resource Package from git. The files are in the [DA262_Resource.zip](DA262_Resource.zip) in this GitHub Repo.
+
+2.	Import the Teched2022_DA262.json into your space.
+
+Once completed and the deployment was successful you should see four objects. 
+ The objects are a very simplified form of sales reporting. Consisting only out of Sales Data and Product Master Data. The Data comes in through Remote Tables, on top of each remote table is a view, a Dimension View for the master data and an Analytical DataSet view for the sales data. The sales data associate the product dimension. The product dimension has one level-based hierarchy defined uses Group -> Brand -> Model levels. For simplicity there is no customer information in the data, also the time dimension holds only a single day, as it is not important for this exercise. 
+ 
+1.	Get the Resource Package from git. xxx
+In the resource package, you can find the data in CSV files and models in JSON. The models require a connection with the technical name ATHENA, if you did not create the Connection in from the previous exercise, please do it now.
+2.	Import the Teched2022_DA262.json into your space.
+**xxx**
+
+
 ## Exercise 1.2 - Import table from SAP S/4 HANA
 
 
