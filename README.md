@@ -1,7 +1,7 @@
 # DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud
 
 ## Description
-This repository contains the material session for *DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud* of SAP TechEd 2022. In the session, a fictional fleet management services company is combining their internal rental data with externally available car registration data to analyze their share in the overall market and identify attractive models & brands in which that market share can be boosted. To participate, you just get yourself a free trial account and follow along. 
+This repository contains the material session for *DA262 - Modeling External and SAP Software Data in SAP Data Warehouse Cloud* of SAP TechEd 2022. In the session, a fictional fleet management services company is combining their internal rental data with externally available car registration data to analyze their share in the overall market and identify attractive models & brands in which that market share can be boosted. To participate, you just get yourself a free trial account and follow along. hallo ![bild](bild.url) *asdf* ** bold**
 
 ## Overview
 This hands-on workshop gives you the opportunity to build an end-to-end data integration & reporting scenario using SAP Data Warehouse Cloud and SAP Analytics Cloud. You'll learn load data into SAP Data Warehouse Cloud from internal sources, combine it with external data from SAP Data Marketplace, prepare a data model, combine data sets, create an analytical model and finally use it in your reporting in SAP Data Warehouse Cloud
