@@ -133,6 +133,11 @@ Now there should be a green check in the right upper corner. If there is a red c
 8. Click "Save New" and enter a name. <br>
 ![Test](/exercises/ex3/images/60.png) <br>
 
+9. Lastly we need to deploy the view. Click to open the perspective you just created.
+![Open](/exercises/ex3/images/011.png)
+10. Click on deploy.
+![Deploy](/exercises/ex3/images/012.png)
+
 ## Summary
 
 You've now created a consumption model to use in visualization.
