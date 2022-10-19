@@ -25,21 +25,52 @@ Next we will create a small visualization.
 ![addConnection](images/addConnection1.png)
 
 6. In our case we have to choose the "SAP Data Warehouse Cloud Analytical Dataset". And click on the "SAPDWC" connection. Now choose your space (G<number>). And choose the v_company_sales.
+  
 ![001](images/001.png)
+
 7. Add the "product" Dimension to have a look at the data.
+
 ![addRow](images/addRow.png)
 
 ## Excercise 4.2 - Show Marketshare in SAC
 
-Now instead of the Sales Data lets import the Perspective we created.
-![](images/.png)
-![](images/.png)
-![](images/.png)
-![](images/.png)
-![](images/.png)
+Now instead of the Sales Data lets import the Perspective we created. 
+1. Create a new table by clicking the table-icon. change the data source by clicking the pen-icon. Click ok, on the warning message (as we want to change the data source).
+
+![addPerspective](images/addPerspective.png)
+
+2. Choose your perspective.
   
 ![addConnection](images/addConnection.png)
 
+3. Now click on the save-button and save your story.
+4. Click the x-Button on the Filter to show all your story.
+ 
+![unselectFilter](images/unselectFilter.png)
   
+5. Lets choose the "brand" as a "Row".
+
+![addRowBrand](images/addRowBrand.png)
   
+6. Now lets create a sample visualization. Click on the chart-icon.
+
+![insertVis](images/insertVis.png)
+
+7. Choose "Marketshare" as a measure. Choose "brand" as a Row (expand "V_MY_COMPANY_PRODUCT" to see all possibilities).
+
+![createVis](images/createVis.png)
   
+8. Next click on "Filter" and exclude "Null".
+  
+![excludeNull](images/excludeNull.png)
+  
+9. Add a reference line to see how close your company is to its goal.
+  
+![addReference](images/addReference.png)
+
+![addReference2](images/addReference2.png)
+
+## Summary
+Now you have created a visualization for your company. This is how it looks:
+
+![final](images/final.png)
