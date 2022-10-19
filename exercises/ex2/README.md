@@ -2,7 +2,7 @@
 
 One of the challenges when working with external data is that they regularly don't quite fit 100% with your internal data, making joint reporting of external and internal data together quite difficult. 
 
-In the case at hand, the brand names used by the external data set for car registrations do not fit 100% to your brand names used in your product master data RT_MY_COMPANY_PRODUCT. Examples are: 
+In the case at hand, the brand names used by the external data set for car registrations do not fit 100% to your brand names used in your product master data RT_MY_COMPANY_PRODUCT. Also some of the model names differ. Examples are: 
 
 Brand name in external data set | Brand name in product master | Issue 
 ---|---|---
@@ -14,14 +14,12 @@ Brand name in external data set | Brand name in product master | Issue
 | MERCEDES | Mercedes-Benz | different brand name | 
 
 
-This leads to the situations that simply joining the car registration data for car models with the product master data on these car models will not lead to the desired result. Luckily, SAP Data Warehouse Cloud has an own operator to help in this situation, namely the [Intelligent Lookup](https://blogs.sap.com/2021/12/21/one-stop-shop-to-intelligent-lookup-in-sap-data-warehouse-cloud/) operator. It helps to bring data together that "almost" matches, but not quite - just as in our situation here. It does this by formulating a series of match rules that define when certain entities (in our case brand names) match to each other. In the background, Intelligent Lookup uses the rules to build up a match table of IDs used on either side denominating the same thing (here: brands).
+This leads to the situations that simply joining the car registration data for car models with the product master data on these car models will not lead to the desired result. Luckily, SAP Data Warehouse Cloud has an own operator to help in this situation, namely the [Intelligent Lookup](https://blogs.sap.com/2021/12/21/one-stop-shop-to-intelligent-lookup-in-sap-data-warehouse-cloud/) operator. It helps to bring data together that "almost" matches, but not quite - just as in our situation here. It does this by formulating a series of match rules that define when certain entities (in our case brand names) match to each other. In the background, Intelligent Lookup uses the rules to build up a match table of IDs used on either side denominating the same thing (here: brands). By help of this hidden "pairing table" the two "unjoinable" tables now become joinable.  
 
-In order to make use of the Intelligent Lookup, we need to ensure that the participating entities (i.e. in our case the remote tables *RT_GERMAN_CAR_REGISTRATION* and *RT_MY_COMPANY_PRODUCT*) are wrapped in views and that these views have key columns defined. So this is what we are going to do: 
+In order to make use of the Intelligent Lookup, we need to ensure that the participating entities (i.e. in our case car registration table and product master view satisfy certain conditions: remote tables need to be wrapped in views and all entities need to have key definitions. So this is what we are going to do: 
 
 - [Exercise 2.1 - Wrap Remote Table with Car Registration Data and Add Keys](#exercise-21---wrap-remote-table-with-car-registration-data-in-graphical-view-and-add-keys)
-- [Exercise 2.2 - Wrap Remote Table for Product Master Data in Graphical View](#exercise-22---wrap-remote-table-for-product-master-data-in-graphical-view)
-- [Exercise 2.3 - Create Intelligent Lookup between Car Registration View and Product View](#exercise-23---create-intelligent-lookup-between-car-registration-view-and-product-view)
-
+- [Exercise 2.2 - Create Intelligent Lookup between Car Registration View and Product View](#exercise-22---create-an-intelligent-lookup-between-car-registration-view-and-product-master)
 
 ## Exercise 2.1 - Wrap Remote Table with Car Registration Data in Graphical View and Add Keys
 Since Intelligent Lookup requires key columns in the participating entities, let's wrap the car registration table in a view and set its key columns:
@@ -30,41 +28,45 @@ Since Intelligent Lookup requires key columns in the participating entities, let
 2.	Click on "New Graphical View". <br> ![New Graphical View](/exercises/ex2/images/004.png)
 3.	From the repository pane on the left, drag & drop your table *RT_GERMAN_CAR_REGISTRATION*. <br> ![Data Market Place](images/drag_table.jpg)
 4. Choose the table node *RT_GERMAN_CAR_REGISTRATION*. In its context pad, choose the function symbol to create a calculation node. <br> ![add calculation node](images/add_calc_node.jpg)
-5. Create a new calculated column by choosing Plus-sign > Calculated Column in the properties panel of the calculated column node. <br> ![add calculated column](images/add_calc_column.jpg)
-6. Create a new projection node by clicking on the just-created calculated column.
-7. In the empty panel of the new calculated column fill these fields:
+5. In the properties panel of the calculation node, create a new calculated column by choosing Plus-sign > Calculated Column. This column will later play a role as ["pairing column"](https://blogs.sap.com/2021/12/21/intelligent-lookup-faq/#WhatIsAPairingColumn) of the Intelligent Lookup. 
+<br> ![add calculated column](images/add_calc_column.jpg)
+6. In the empty panel of the new calculated column, fill these fields:
     - Business Name: *ModelBrand*
     - Technical Name: *ModelBrand*
     - Data Type: *String*
     - Length: *5000*
-    - Expression (choose *Validate* to confirm correctness): <pre><code>CONCAT(CONCAT(model,' ',),marke)</pre></code>
+    - Expression (choose *Validate* to confirm correctness): <code>CONCAT(CONCAT(model,' ',),marke)</code>
     
+
     <br> ![configure calculated column](images/configure_calc_column_modelbrand.jpg)
 
-8. Choose the calculation node and add a projection node in the context pad. Projection nodes allow exlusion of columns (here: release_id) and renaming of columns (here: from *id* to *Product_Id*). <br> ![Add projection node](images/add_projection_node.jpg)
+8. Choose the calculation node and add a projection node in the context pad. Projection nodes allow exlusion of columns (here: *release_id*) and renaming of columns (here: from *id* to *Product_Id*). <br> ![Add projection node](images/add_projection_node.jpg)
 9. In the details panel of the projection node, choose column "release_id", open the three dots and choose *Exclude column*. <br> ![Exclude Column](images/exclude_release_id.jpg)
-10. Choose the final node and select column *Time*. Select the three dots to open its context menu. Choose the menu entry *Set as key* to make time a key column of the view. <br> ![set as key](images/set_key.jpg)
-11. Also turn *model* and *marke* (English: brand) into key columns.
+
+10. Inspect your data choosing the preview icon in the context pad of the projection node. If you look closely, you see that the car registration data contains a summary number "All models" that simply sums up the individual registration numbers of individual models of a given brand. 
+<br> ![data preview w summary numbers](images/view_sum_all_models.jpg)
+
+11. In order to avoid double counts during reporting, we need to filter these records out.  
+We create a new filter node by choosing the filter icon on the context pad of the projection node
+<br> ![create filter node](images/view_create_filter_node.jpg)
+
+12. In the properties panel of the filter node, we set the filter expression to <code>model != 'All models'</code>  
+Check the data preview panel that these records are indeed filtered out
+<br> ![Filter node settings](images/filter_node_props.jpg)
+
+13. Now let's do final adjustments on the last node. For once, choose the final node and select column *Time*. Select the three dots to open its context menu. Choose the menu entry *Set as key* to make time a key column of the view. <br> ![set as key](images/set_key.jpg)
+14. Also turn *model* and *marke* (German for "brand") into key columns.
+
+15. In the properties panel of the final node, change drop-down for Semantic Usage to *Analytical Dataset*. This turns the current view into a multi-dimensional artefact that can be consumed directly by SAP Analytics Cloud. In order to fully configure the artefact, drag & drop columns *all*, *bev* and *cabriolet* to section *Measures*
+<br> ![ADS settings](images/view_ads_settings.jpg)
 12. Choose *Save* in the action bar. <br> ![save button](images/save_button.jpg)
 13. In the prompt, set technical and business name to *V_GERMAN_CAR_REGISTRATION*. <br> ![Save as](images/Save_view.JPG)
-14. Deploy the view by choosing *Deploy* in the action bar. This will generate all runtime artefacts in the HANA Cloud system underneath SAP Data Warehouse Cloud. <br> ![deploy button](images/deploy_button.jpg)
- 
+14. Deploy the view by choosing *Deploy* in the action bar. 
+<br> ![deploy button](images/deploy_button.jpg)
 
-## Exercise 2.2 - Wrap Remote Table for Product Master Data in Graphical View
-Intelligent Lookup cannot deal with remote tables at this point. Therefore we have to wrap the remote table for product master data, i.e. *RT_MY_COMPANY_PRODUCT*, in a Graphical View. Its keys are already defined by the source table, so no dedicated key definition is required. 
+We have now generated all runtime artefacts in the HANA Cloud system underneath SAP Data Warehouse Cloud to report the external data on car registrations also in SAP Analytics Cloud. The only problem is that the models & brands that the data refers to isn't quite aligned with our internal product master. This is what we will be fixing now.  
 
-**Note: For all steps that are identical to the respective steps in [exercise 2.1](#exercise-21---wrap-remote-table-with-car-registration-data-in-graphical-view-and-add-keys), no own screenshots are provided**.
-
-1. Create new Graphical view as in Exercise 2.1.
-2. Drag the table *RT_MY_COMPANY_PRODUCT* onto the canvas.
-3. Create a projection node via the context pad. Choose to change the name of the column *id*. <br> ![Change id column](images/change_name.jpg)
-4. In the prompt that follows, change the business name to *Product Id* and the technical name to *Product_Id*. <br> ![Change name of id column](images/change_name_of_id.jpg)
-5. Using the same workflow, change the name of the *model* column to *Model Name* (business name) and *Model_Name* (technical name).
-<br> ![product view change model name column](images/product_view_change_model_name.jpg)
-6. Select the final (i.e. right-most) node of the view and inspect its details in the details pane on the right. The column *Product id* should bear a key symbol.  <br> ![product view field list](images/product_view_field_list.jpg)
-7. Save & Deploy the view. Use V_MY_COMPANY_PRODUCT as its technical and as its business name. <br> ![save product view prompt](images/save_product_view_prompt.jpg)
-
-## Exercise 2.3 - Create an Intelligent Lookup between Car Registration View and Product Master
+## Exercise 2.2 - Create an Intelligent Lookup between Car Registration View and Product Master
 
 1.	In Data Builder, click on "New Intelligent Lookup". 
 <br> ![Data Builder - New Intelligent Lookup](images/il_create_new.jpg)
