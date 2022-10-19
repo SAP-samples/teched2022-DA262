@@ -16,24 +16,21 @@ MyCompany provides fleet management services for large enterprise customers. The
 ## Pre-Requisites
 - Google Chrome
 - Access to this GitHub repository
-- Access to a SAP Data Warehouse Cloud tennant [Link to a guided experience trial system of SAP Data Warehouse Cloud](https://www.sap.com/products/technology-platform/data-warehouse-cloud.html)
-- The [Connection_HANA.json](TechEd_2022_DA262.zip) in this GitHub Repo's Ressource Zip
+- Access to a Guided Experience system of SAP Data Warehouse Cloud tenant (if you don't have one yet, please follow the instructions of [exercise 0](/exercises/ex0/)
+- This [ressource archive](/TechEd_2022_DA262.zip) will be required in [exercise 1](/exercises/ex1/) 
 
 ## Exercises
 - [Overview on Exercises and Object Model](exercises/overview/)
 - [Exercise 0 - Preparations](exercises/ex0/)
-- [Exercise 1 - Load Data into the SAP DWC](exercises/ex1/)
-- [Exercise 2 - Combine two data sets](exercises/ex2/)
-- [Exercise 3 - Create a Consumption Model in the Business Layer](exercises/ex3/)  
-- [Exercise 4 - Create a SAC Story (optional)](exercises/ex4/)
-
-Start the exercises [here](exercises/ex0/).
+- [Exercise 1 - Load data from SAP HANA Cloud](exercises/ex1/)
+- [Exercise 2 - Map external car registration data to internal product master data](exercises/ex2/)
+- [Exercise 3 - Preparing Analytic Data Consumption via the Business Layer](exercises/ex3/)  
+- [Exercise 4 - Create an SAC Story (optional)](exercises/ex4/)
 
 ## Extended Scenario
-[Find last years links here](https://blogs.sap.com/2021/10/21/sap-data-warehouse-cloud-at-sap-teched-2021/)
+[Find TechEd 2021 materials here](https://blogs.sap.com/2021/10/21/sap-data-warehouse-cloud-at-sap-teched-2021/)
 
 ## Disclaimer
-Your screen shots may look different than those in the exercises; they may contain additional content, depending on what other attendees have entered.
 Some user interface elements may differ from the screenshot used in the exercise.
 Be aware that some of the exercises are based on each other, therefore flagged as mandatory. Other parts can work based on prebuilt parts to save you some time, marked as optional. This gives you the flexibility to decide which exercises you would like to focus on.
 
