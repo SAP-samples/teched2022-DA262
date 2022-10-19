@@ -50,7 +50,7 @@ Since Intelligent Lookup requires key columns in the participating entities, let
 We create a new filter node by choosing the filter icon on the context pad of the projection node
 <br> ![create filter node](images/view_create_filter_node.jpg)
 
-12. In the properties panel of the filter node, we set the filter expression to <code>model != 'All models'</code>  
+12. In the properties panel of the filter node, we set the filter expression to <code>model != 'All Models'</code>  
 Check the data preview panel that these records are indeed filtered out
 <br> ![Filter node settings](images/filter_node_props.jpg)
 
