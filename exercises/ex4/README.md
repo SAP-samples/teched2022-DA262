@@ -20,11 +20,21 @@ Next we will create a small visualization.
 
 ![createTable](images/createTable.png)
 
+5. To use a dataset for the first time we have to create a connection. 
+
+![addConnection](images/addConnection1.png) tbd
+
+6. In our case we have to choose the "SAP Data Warehouse Cloud Analytical Dataset". And click  on the "SAPDWC" connection. Now your space and your connections are
+
 
 
 
 ![](images/.png)
-![](images/.png)
+
+
+
+
+
 ![](images/.png)
 ![](images/.png)
 ![](images/.png)
@@ -33,3 +43,6 @@ Next we will create a small visualization.
 ![](images/.png)
 
 ## Excercise 4.2 - Show Marketshare in SAC
+
+Now instead of the Sales Data lets import the Perspective we created.
+![addConnection](images/addConnection.png)
