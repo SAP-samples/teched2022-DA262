@@ -15,13 +15,13 @@ Car registration data and sales data both contain facts about the same entity, n
 <br> ![open bus builder](images/open_biz_builder.jpg)
 2. Click on “New Dimension”. Choose *V_MY_COMPANY_PRODUCT* as data entity and set its business name to *DIM_MY_COMPANY_PRODUCT*. The technical name will be auto-adjusted to *BE_DIM_MY_COMPANY_PRODUCT*. 
 <br> ![Wizard - Data Entity](images/dim_wizard_data_entity.jpg)
-3. Confirm take over the key definitions from the underlying view *V_MY_COMPANY_PRODUCT*. 
+3. Confirm take over all attributes & key definitions from the underlying view *V_MY_COMPANY_PRODUCT* and choose *Create*. 
 <br> ![Dim Wizard - take over props and keys](images/dim_wizard_copy_props.jpg)
-Find dimensionChoose the product view Dimension you created in the Data Builder as a Data entity. Choose your Business Name and Technical Name. Click “next”. <br> ![Test](/exercises/ex3/images/6.png) ![Test](/exercises/ex3/images/7.png)
-3. In the next dialog choose “yes” and copy the properties. Click ”next”.
-4. Choose the "Attributes" sheet. Delete the "id" column from your attributes by clicking the "x" behind the entry. <br> ![Test](/exercises/ex3/images/8.png) <br> Now you have created a dimension to use in the SAC. You can filter by all the attributes you have just choosen.
-5. Choose the "General" sheet and switch the status to "Ready to Use"
-6. Click "Save".
+4. This brings you to the main page of the product dimension dialog. The object is auto-saved, so there's nothing you need to do right now, but it would good if you checked the various tabs and its contents
+<br> ![Dim main page](images/dim_main_page.jpg) 
+
+5. Leave the dialog by choosing the cross sign in the header.
+<br> ![Close dim](images/dim_close.jpg)
 
 ## Exercise 3.2 - Create Analytical Dataset for Car Registration Data
 
