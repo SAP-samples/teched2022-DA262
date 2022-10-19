@@ -128,37 +128,15 @@ Note: You can skip *Step 2*. If you clicked it, just confirm the defaults.
 10. Now the linking between the two Analytical Datasets and the newly added product dimension is performed. Please follow the click sequence as depicted in the animated gif below
 <br> ![Link product dim gif](images/cm_link_product_dims.gif)
 
-7. Give your data source an alias click on "Step 3". Then click on create.  <br>
-![Test](/exercises/ex3/images/35.png) <br>
-8. Add a new Dimension Source, choose "MyCompany Products" and click on "Step 2".  <br>
-![Test](/exercises/ex3/images/38.png) <br>
-9. Add an Alias and click on "Step 3". <br>
-![Test](/exercises/ex3/images/39.png) <br>
-Now you connect the Fact Sources to the Product Dimension.  <br>
-![Test](/exercises/ex3/images/40.png) <br>
-10. Click on the Fact Source and click on the "Expand"-Icon.  <br>
-![Test](/exercises/ex3/images/41.png) <br>
-11. Click on the Products and click the "Link"-Icon.  <br>
-![Test](/exercises/ex3/images/42.png) <br>
-12. Now you have to do the same thing for the other Fact Model. <br>
-Click on the Sales Model and click on the "Expand"-Button. <br>
-![Test](/exercises/ex3/images/43.png) <br>
-![Test](/exercises/ex3/images/44.png) <br>
-13. Click on the newly expanded Product Dimension and click on the "Link"-Icon. <br>
-![Test](/exercises/ex3/images/45.png) <br>
-![Test](/exercises/ex3/images/46.png) <br>
-14. Click on "Create". <br>
-![This is how the model should look now](/exercises/ex3/images/48.png) <br>
+## Exercise 3.5 - Add key figures
 
-## Exercise 3.5 - Create (Calculated) Key Figures
-
-1. Now add the Measures (BEV, Cabriolets, Sales Unit, All).  <br>
+1. Now add the Measures (Sales Unit, Car registrations).  <br>
 ![Test](/exercises/ex3/images/49a.png) <br>
 2. Next we add a calculated measure. Add a measure and choose "Calculated Measure".  <br>
 ![Test](/exercises/ex3/images/50.png) <br>
 3. Create the calculation for market share. <br>
 ![Test](/exercises/ex3/images/51.png) <br>
-Divide "Sales Unit" by "All Vehicles". And click "Save". <br>
+Divide "Sales Unit" by "Car Registrations". And click "Save". <br>
 ![This is all measures that we just created.](/exercises/ex3/images/52.png) <br>
 4. Now we have to create the attributes, the model will be filtered by (Brand, Group, Model, Orign).  <br>
 ![Test](/exercises/ex3/images/53.png) <br>
