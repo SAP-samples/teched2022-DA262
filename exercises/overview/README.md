@@ -12,3 +12,8 @@ The exercises start from an empty DWC Guided Experience system and guide you to 
 Once these Business Layer entities are defined, users can continue and create a Consumption Model ([SAP Help](https://help.sap.com/docs/SAP_DATA_WAREHOUSE_CLOUD/c8a54ee704e94e15926551293243fd1d/337fa99de4a44700ba49e2214a1f3349.html)).  
 Finally, we model the key figures for internal sales, overall car registration and thus market share (as internal sales divided by overall registrations). To finally expose our developments to SAC, we require a perspective - we simply generate one while previewing the data in our model. 
 * Finally in [Exercise 4](../ex4/), we leverage the just-created perspective in an SAP Anayltics Cloud story. We simply create a new story, connect it to the DWC data model (i.e. the perspective) and then create the required charts & tables.
+
+## Summary
+Now you have understood the overall structure of the exercises and the objects involved. 
+
+If you have no access to a DWC Guided Experience system, get one by following the steps of [exercise 0](/exercises/ex0/). Otherwise, you can directly start with [exercise 1](/exercises/ex1/). 
