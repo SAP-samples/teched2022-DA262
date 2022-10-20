@@ -24,7 +24,7 @@ If prompted, choose your space (in DWC Guided Experience systems, there's only o
 3. Click on the *Import* icon in the action bar and choose *Import Objects from CSN/JSON*. Navigate to the file *Connection_HANA.json* and choose *Open*.  <br> ![](images/import_csn_json.png) 
 4. In the import dialog, select all five objects (i.e. three remote tables & two views) and choose *Import CSN File*. <br> ![](images/import_dialog.jpg). 
 5. Wait for the import to complete. You'll get a notification about this.
-6. In the Data Builder, check check all five objects and choose *Deploy* from the action bar. Wait for a success message of the deployment before you proceed further
+6. In the Data Builder, check check all five objects and choose *Deploy* from the action bar. Wait for a success message of the deployment before you proceed further.
 <br> ![](images/mass_deploy.jpg)
 
 ## Exercise 1.2 - Create Snapshot and inspect data
