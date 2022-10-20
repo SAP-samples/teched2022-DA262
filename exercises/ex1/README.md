@@ -31,11 +31,11 @@ If prompted, choose your space (in DWC Guided Experience systems, there's only o
 
 By default, remote tables are accessed on the fly in a "federated" fashion. In some situations, it can be helpful to replicate the data though, esp. if latency or other performance considerations apply. To become  familiar also with this functionality, you draw a replicated "snapshot" of the data in SAP Data Warehouse Cloud.
 
-For **each of the three remote tables**, do the following
-1. Click on the table name in the Data Builder <br> ![](images/open_remote_table.jpg)
+For **each of the three remote tables**, do the following:
+1. Click on the table name in the Data Builder. <br> ![](images/open_remote_table.jpg)
 2. In section *Remote*, find the the save icon and click on *Load New Snapshot*.  <br> ![](images/load_snapshot.jpg)  
 3. You should get a "Replication started"-message. <br>![](images/replication_started.jpg)  
-4. Inspect the table data by choosing the Data Preview icon in the action bar <br> ![](images/data_preview.jpg)
+4. Inspect the table data by choosing the Data Preview icon in the action bar. <br> ![](images/data_preview.jpg)
 
 # Summary
-Now you have laid the foundation for subsequent modeling, harmonization & reporting steps. You can now continue to - [Exercise 2 - Map car registration data to internal brand master](../ex2/README.md)
+Now you have laid the foundation for subsequent modeling, harmonization & reporting steps. You can now continue to - [Exercise 2 - Map car registration data to internal brand master](../ex2/README.md).
