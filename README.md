@@ -23,9 +23,21 @@ MyCompany provides fleet management services for large enterprise customers. The
 - [Overview on Exercises and Object Model](exercises/overview/)
 - [Exercise 0 - Preparations](exercises/ex0/)
 - [Exercise 1 - Load data from SAP HANA Cloud](exercises/ex1/)
+  - [Exercise 1.1 - Load JSON](exercises/ex1#exercise-11---load-json)
+  - [Exercise 1.2 - Create Snapshot and inspect data](exercises/ex1/README.md#exercise-12---create-snapshot-and-inspect-data)
 - [Exercise 2 - Map external car registration data to internal product master data](exercises/ex2/)
+  - [Exercise 2.1 - Wrap Remote Table with Car Registration Data in Graphical View and Add Keys](exercises/ex2#exercise-21---wrap-remote-table-with-car-registration-data-in-graphical-view-and-add-keys)
+  - [Exercise 2.2 - Create an Intelligent Lookup between Car Registration View and Product Master]exercises/ex2#exercise-22---create-an-intelligent-lookup-between-car-registration-view-and-product-master)
 - [Exercise 3 - Preparing Analytic Data Consumption via the Business Layer](exercises/ex3/)  
+  - [Exercise 3.1 - Create a Dimension for Product](exercises/ex3/README.md#exercise-31---create-a-dimension-for-product)
+  - [Exercise 3.2 - Create Analytical DataSet for My Company Sales](exercises/ex3/README.md#exercise-32---create-analytical-dataset-for-my-company-sales)
+  - [Exercise 3.3 - Create Analytical Dataset for Car Registration Data](exercises/ex3/README.md#exercise-33---create-analytical-dataset-for-car-registration-data)
+  - [Exercise 3.4 - Create Multifact Consumption Model that brings together the numbers for car registrations and internal sales](exercises/ex3/README.md#exercise-34---create-multifact-consumption-model-that-brings-together-the-numbers-for-car-registrations-and-internal-sales)
+  - [Exercise 3.5 - Add key figures](exercises/ex3/README.md#exercise-35---add-key-figures)
 - [Exercise 4 - Create an SAC Story (optional)](exercises/ex4/)
+  - [Excercise 4.1 - Show Sales Data in SAC](exercises/ex4/README.md#excercise-41---show-sales-data-in-sac)
+  - [Excercise 4.2 - Show Marketshare in SAC](exercises/ex4/README.md#excercise-42---show-marketshare-in-sac)
+  
 
 ## Extended Scenario
 [Find TechEd 2021 materials here](https://blogs.sap.com/2021/10/21/sap-data-warehouse-cloud-at-sap-teched-2021/)
