@@ -20,7 +20,7 @@ Next we will create a small visualization.
 
 ![createTable](images/createTable.png)
 
-5. To use a dataset for the first time we have to create a connection. 
+5. To use a dataset for the first time we have to load the model from the DWC once. If we want use it in the Story later we do not need to do that step again.
 
 ![addConnection](images/addConnection1.png)
 
