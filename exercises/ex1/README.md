@@ -38,4 +38,5 @@ For **each of the three remote tables**, do the following:
 4. Inspect the table data by choosing the Data Preview icon in the action bar. <br> ![](images/data_preview.jpg)
 
 # Summary
-Now you have laid the foundation for subsequent modeling, harmonization & reporting steps. You can now continue to - [Exercise 2 - Map car registration data to internal brand master](../ex2/README.md).
+Now you have laid the foundation for subsequent modeling, harmonization & reporting steps. You can now continue to - [Exercise 2 - Map car registration data to internal brand master](../ex2/README.md). <br>
+If you want to, [you can jump ahead and start a small SAC Story](/exercises/ex4#excercise-41---show-sales-data-in-sac). You will not be able to do exercise 4.2 that way!
