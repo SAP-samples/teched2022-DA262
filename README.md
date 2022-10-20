@@ -16,7 +16,7 @@ MyCompany provides fleet management services for large enterprise customers. The
 ## Pre-Requisites
 - Google Chrome
 - Access to this GitHub repository
-- Access to a Guided Experience system of SAP Data Warehouse Cloud tenant (if you don't have one yet, please follow the instructions of [exercise 0](/exercises/ex0/)
+- Access to a Guided Experience system of SAP Data Warehouse Cloud tenant (if you don't have one yet, please follow the instructions of [exercise 0](/exercises/ex0/))
 - This [ressource archive](/TechEd_2022_DA262.zip) will be required in [exercise 1](/exercises/ex1/) 
 
 ## Exercises
