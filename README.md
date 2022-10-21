@@ -27,7 +27,7 @@ MyCompany provides fleet management services for large enterprise customers. The
   - [Exercise 1.2 - Create Snapshot and inspect data](exercises/ex1/README.md#exercise-12---create-snapshot-and-inspect-data)
 - [Exercise 2 - Map external car registration data to internal product master data](exercises/ex2/)
   - [Exercise 2.1 - Wrap Remote Table with Car Registration Data in Graphical View and Add Keys](exercises/ex2#exercise-21---wrap-remote-table-with-car-registration-data-in-graphical-view-and-add-keys)
-  - [Exercise 2.2 - Create an Intelligent Lookup between Car Registration View and Product Master]exercises/ex2#exercise-22---create-an-intelligent-lookup-between-car-registration-view-and-product-master)
+  - [Exercise 2.2 - Create an Intelligent Lookup between Car Registration View and Product Master](exercises/ex2#exercise-22---create-an-intelligent-lookup-between-car-registration-view-and-product-master)
 - [Exercise 3 - Preparing Analytic Data Consumption via the Business Layer](exercises/ex3/)  
   - [Exercise 3.1 - Create a Dimension for Product](exercises/ex3/README.md#exercise-31---create-a-dimension-for-product)
   - [Exercise 3.2 - Create Analytical DataSet for My Company Sales](exercises/ex3/README.md#exercise-32---create-analytical-dataset-for-my-company-sales)
