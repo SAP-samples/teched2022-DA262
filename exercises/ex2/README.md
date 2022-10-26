@@ -34,7 +34,8 @@ Since Intelligent Lookup requires key columns in the participating entities, let
     - Business Name: *ModelBrand*
     - Technical Name: *ModelBrand*
     - Data Type: *String*
-    - Length: *5000*
+    - Length: *5000*  
+      **Note: This length is important. Please do not use a shorter length**
     - Expression (choose *Validate* to confirm correctness): <code>CONCAT(CONCAT(model,' ',),marke)</code>
     
 
@@ -55,7 +56,8 @@ Check the data preview panel that these records are indeed filtered out
 <br> ![Filter node settings](images/filter_node_props.jpg)
 
 13. Now let's do final adjustments on the last node. For once, choose the final node and select column *Time*. Select the three dots to open its context menu. Choose the menu entry *Set as key* to make time a key column of the view. <br> ![set as key](images/set_key.jpg)
-14. Also turn *model* and *marke* (German for "brand") into key columns.
+14. Also turn *model* and *marke* (German for "brand") into key columns. 
+    **Note: It is important to have all three keys correctly set**
 
 15. In the properties panel of the final node, change drop-down for Semantic Usage to *Analytical Dataset* and toggle *Expose for consumption* to ON. This turns the current view into a multi-dimensional artefact that can be consumed directly by SAP Analytics Cloud. In order to fully configure the artefact, drag & drop columns *all*, *bev* and *cabriolet* to section *Measures*
 <br> ![ADS settings](images/view_ads_settings.jpg)
