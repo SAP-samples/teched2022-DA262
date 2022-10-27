@@ -37,7 +37,7 @@ Since Intelligent Lookup requires key columns in the participating entities, let
     - Length: *5000*  
       **Note: This length is important. Please do not use a shorter length**
     - Expression (choose *Validate* to confirm correctness): <code>CONCAT(CONCAT(model,' ',),marke)</code>
-      **Note: The length changes when validating, make sure it is 5000**
+      <br>**Note: The length changes when validating, make sure it is 5000**
     
 
     <br> ![configure calculated column](images/configure_calc_column_modelbrand.jpg)
