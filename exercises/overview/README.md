@@ -13,6 +13,8 @@ Once these Business Layer entities are defined, users can continue and create a 
 Finally, we model the key figures for internal sales, overall car registration and thus market share (as internal sales divided by overall registrations). To finally expose our developments to SAC, we require a perspective - we simply generate one while previewing the data in our model. 
 * Finally in [Exercise 4](../ex4/), we leverage the just-created perspective in an SAP Anayltics Cloud story. We simply create a new story, connect it to the DWC data model (i.e. the perspective) and then create the required charts & tables.
 
+Note: Please note that for simplicity sake and considering the small object model, we deviate from the naming conventions proposed in the [Development Guidelines Guide for Data Warehouse Cloud](https://www.sap.com/documents/2021/09/8a0fc7ca-f67d-0010-bca6-c68f7e60039b.html). For your own projects, we suggest your familiarize yourself with the guidelines proposed there. 
+
 ## Summary
 Now you have understood the overall structure of the exercises and the objects involved. 
 

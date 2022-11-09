@@ -27,6 +27,8 @@ If prompted, choose your space (in DWC Guided Experience systems, there's only o
 6. In the Data Builder, check check all five objects and choose *Deploy* from the action bar. Wait for a success message of the deployment before you proceed further.
 <br> ![](images/mass_deploy.jpg)
 
+**Note:** As said, you could also load the same table data directly from [SAP Data Marketplace](https://blogs.sap.com/2021/12/13/sap-data-warehouse-cloud-data-marketplace-an-overview/) or by [uploading the respective CSVs](https://help.sap.com/docs/SAP_DATA_WAREHOUSE_CLOUD/c8a54ee704e94e15926551293243fd1d/8bba251c78874736963703cff56b1b74.html) directly into tables.  We will be adding an own chapter on both ways after TechEd. For the time being, we concentrate on the straight-forward way as described here. 
+
 ## Exercise 1.2 - Create Snapshot and inspect data
 
 By default, remote tables are accessed on the fly in a "federated" fashion. In some situations, it can be helpful to replicate the data though, esp. if latency or other performance considerations apply. To become  familiar also with this functionality, you draw a replicated "snapshot" of the data in SAP Data Warehouse Cloud.
@@ -37,6 +39,9 @@ For **each of the three remote tables**, do the following:
 3. You should get a "Replication started"-message. <br>![](images/replication_started.jpg)  
 4. Inspect the table data by choosing the Data Preview icon in the action bar. <br> ![](images/data_preview.jpg)
 
+**Note:** You can also check the replication status of the remote tables under menu item *Data Integration Monitor > Remote Table Monitor*. Replications can also be started & scheduled from within the monitor by navigating into an individual remote table. <br>
+![data integration monitor](images/data_integration_monitor.jpg)
+
 # Summary
-Now you have laid the foundation for subsequent modeling, harmonization & reporting steps. You can now continue to - [Exercise 2 - Map car registration data to internal brand master](../ex2/README.md). <br>
+You have now imported and replicated three tables as well as two views building on top of these tables. You have thus laid the foundation for subsequent modeling, harmonization & reporting steps. You can now continue to - [Exercise 2 - Map car registration data to internal brand master](../ex2/README.md). <br>
 If you want to, [you can jump ahead and start a small SAC Story](/exercises/ex4#excercise-41---show-sales-data-in-sac). You will not be able to do exercise 4.2 that way!
