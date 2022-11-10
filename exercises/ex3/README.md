@@ -1,5 +1,8 @@
 # Exercise 3 - Preparing Analytic Data Consumption via the Business Layer
-To create a reusable model for consumption in SAC, you will need to create a reporting model in the Business Layer. To this end, we create the relevant business entities and subsequently consume them in a *Consumption Model*. 
+To create a reusable model for consumption in SAC, you will need to create a reporting model in the [Business Layer](https://help.sap.com/docs/SAP_DATA_WAREHOUSE_CLOUD/c8a54ee704e94e15926551293243fd1d/3829d46c48a44f1e94915054bd76b7b9.html). The Business Builder is the place to define how SAP Analytics Cloud shall see how data shall come together (here: sales data & car registration data), what parts of the data shall be exposed (here: what fields; but we could also e.g. define which hierarchies), which measures are offered and how they are calculated (here: sales figures, car registration figures and the market share as ratio of the two; conceptually also other complex calculations, currency configurations etc. could be configured here). 
+
+In order to thus creat the "analytic view" of our data, we need to create the relevant business entities and subsequently consume them in a *Consumption Model*. The final artefact consumed by SAP Analytics Cloud will be a "Perspective", which is a use case-specific view of the consumption model.  
+So let's get started then. These are the steps we are going to run through:  
 
 - Creating Business Entities  
     - [Exercise 3.1 - Create a Dimension for Product](#exercise-31---create-a-dimension-for-product)
@@ -105,7 +108,7 @@ Let's follow these steps to get there:
 ![Create Consumption Model](images/create_cm.jpg)<br>
 2. In the wizard, add business name *Fleet Management* and technical name *CM_SALES_REG* and click *Step 2*.
 <br> ![CM wizard - business name](images/cm_create_wizard_biz_name.jpg)
-3. Choose the first fact source of our Consumption Model. We start with the sales ADS *BE_MY_COMPANY_ADS*.  
+3. Choose the first fact source of our Consumption Model. We start with the sales ADS *BE_MY_COMPANY_SALES_ADS*.  
 Select it and close the dialog with *Create*  
 Note: You can skip *Step 3*. If you clicked *Step 3*, just confirm the defaults. 
 <br> ![CM Wizard - choose fact source](images/cm_create_wizard_fact_source_1.jpg)<br>
@@ -130,36 +133,69 @@ Note: You can skip *Step 2*. If you clicked it, just confirm the defaults.
 
 ## Exercise 3.5 - Add key figures
 
-1. Now add the Measures (Sales Unit, Car registrations).  <br>
-![Test](/exercises/ex3/images/49a.png) <br>
-2. Next we add a calculated measure. Add a measure and choose "Calculated Measure".  <br>
-![Test](/exercises/ex3/images/50.png) <br>
-3. Create the calculation for market share. <br>
-![Test](/exercises/ex3/images/51.png) <br>
-Divide "Sales Unit" by "Car Registrations". And click "Save". <br>
+1. Now measures need to be added from the two fact sources to the consumption model *Fleet Management* and going to the *Measures* tab: 
+* Add a measure for sales units from the company's internal sales by following these steps: 
+    * Choose plus (+) to add a new measure
+    * In section *Source*, choose measure *Sales Units* from BE_MY_COMPANY_SALES_ADS. The fields for business name and technical name are filled automatically. 
+    * Choose *Save*
+* Add another measure for the overall marekt sales
+    * Choose plus (+) to add a new measure
+    * In section *Source*, choose measure *Car Registration* from BE_CAR_REGISTRATION_ADS. Overwrite the fields for business name *KBA All Vehicle* and technical name *KBA_All_Vehicle*. 
+    * Choose *Save*
+
+<br> ![Fleet Management Add fact source measures](images/FleetMgmt_AddFactSourceMeasures.png) 
+
+2. Next we add a calculated measure for the market share. The market share is calculated as the ratio of the company's internal sales and the overall market sales. Interestingly, that calculation needs to happen **after aggregation**, i.e. depending on the current drill-down state, first the internal sales and market sales need to be aggregated and only then is the ratio calculated. This calculation after aggregation is one of the reasons why the number can only be calculated in the consumption model (i.e. as part of your *analytical modelling* and not in the relational views underneath (where all calculations are within in single database record row).   
+
+Follow these steps to calculate the market share <u>after aggregation</u> correctly  
+* In the *Measures* tab, Choose plus (+) to add a new measure
+* In section *Name*, set business name to *Market Share* and the technical name to *Market_Share*
+* In section *Source*, choose to create a Measure Type *Calculated Measure* 
+<br> ![Test](/exercises/ex3/images/50.png) <br>
+3. Create the calculation for market share by dividing measure *Sales Units* by measure *Market Sales*. Both can be added manually (just type their name) or by using button *Add measure to formula*
+<br>![Test](/exercises/ex3/images/51.png) <br>
+4. Divide measure *Sales Unit* by measure *Car Registrations*. And click "Save". <br>
 ![This is all measures that we just created.](/exercises/ex3/images/52.png) <br>
-4. Now we have to create the attributes, the model will be filtered by (Brand, Group, Model, Orign).  <br>
+5. Now we have to create the attributes that users can use to drill-down by, namely *Brand*, *Group*, *Model* & *Orign*).  
+For each of the four attributes, do the following: 
+* Switch to *Attributes* tab 
+* Choose plus (+) sign 
+* In section *Source*, select attribute type *Dimension Source Attribute*
+* Choose respesource attribute (e.g. *brand*, *group*, *model*, *origin*)
+* Define business name and technical name
+* Save your work  
+**Note:** after these steps, you will have created <u>four</u> attributes  
+<br>
 ![Test](/exercises/ex3/images/53.png) <br>
 ![Test](/exercises/ex3/images/54.png) <br>
-![Test](/exercises/ex3/images/55.png) <br>
-5. Go to the "General" sheet and check the "Allow public data access" box. Then click "Save".  <br>
+![Fleet Mgmt Attribute List](images/FleetMgmt_Attribute_List.png) 
+<br>
+6. Go to the *General* sheet and check the *Allow public data access* box. This specifies that no dedicated "authorization scenario" is active to restrict data access for individual users or groups to specific parts of the data.  
+Then click "Save".  <br>
 ![Test](/exercises/ex3/images/56.png) <br>
-Now there should be a green check in the right upper corner. If there is a red cross something went wrong. Please check the failure message. <br>
+7. Now there should be a green check in the right upper corner. If there is a red cross something went wrong. Please check the failure message. <br>
 ![Test](/exercises/ex3/images/57.png) <br>
-6. To create a story based on this Fact Model, you need to create a perspective. You can either do this by clicking the "+"-Button or by clicking on the "Data Preview". Click on the "Data Preview". <br>
-![Test](/exercises/ex3/images/58.png) <br>
-7. Create a table to base your perspective on by drag-and-drop.  <br>
-![Test](/exercises/ex3/images/59.png)  <br>
-8. Click "Save New" and enter a name. <br>
-![Test](/exercises/ex3/images/60.png) <br>
+8. To create a story based on this Consumption Model, you need to create a "Perspective". Perspectives are use case-specific adaptations of the Consumption Model, where you can potentially downsize the consumption model or make its data available to different users with different authorization scenarios. An example here would be that the same sales data for product by region could be made available for regional managers (they see all products, but only for their region) and for product managers (they see only their product, but for all regions). This is why conceptually this additional level in the consumption stack can make sense and allow for clever reuse.  
+In our case, we define a very simple perspective by using the *Data Preview* functionality for the Consumption Model.  
+So open the *Data Preview* by selecting the respective button on the top right of the screen. 
+<br> ![Fleet Mgmt Open Data Preview](images/FleetMgmt_AddPersp_via_Preview.png) 
 
-9. Lastly we need to deploy the view. Click to open the perspective you just created.
-![Open](/exercises/ex3/images/011.png)
-10. Click on deploy.
+9. Add these columns that you want to expose in SAC via drag-and-drop or by using the three dots (...) and the menu entry "Add to Perspective". by hitting *Save New*  
+    * brand
+    * model
+    * KBA_All_Vehicle
+    * Sales Unit
+    * Market Share  
+
+Then save your new perspective 
+<br> ![Data Preview and save](images/FleetMgmt_DataPreview.png)  <br>
+
+10. Leave the Data Preview screeen by toggling the *Data Preview* button. This will bring you back to the Consumption Model screen and all its tabs. 
+
+11. On tab *Perspectives*, find your newly created perspective and click to open it. Hit *Deploy* button to generate the required runtime artefacts in SAP Data Warehouse Cloud. These are what SAP Analytics Cloud will eventually use for querying data.  
 ![Deploy](/exercises/ex3/images/012.png)
 
 ## Summary
 
-You've now created a consumption model to use in visualization.
-If you want to, you can now go into the SAP SAC to create a story from the SAP DWC dataset. Just choose the DWC as a data source and create your visualization.
+You've now created a perspective to use in visualization. You can now go into the SAP Analytics Cloud to create a story on top of it.
 Continue to - [Exercise 4 - Create SAC Story (Optional)](../ex4/README.md)

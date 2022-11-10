@@ -20,7 +20,7 @@ MyCompany provides fleet management services for large enterprise customers. The
 - This [ressource archive](/TechEd_2022_DA262.zip) will be required in [exercise 1](/exercises/ex1/) 
 
 ## Exercises
-- [Overview on Exercises and Object Model](exercises/overview/)
+- [Overview on Exercises and Object Model](exercises/overview/) (also as [DA262.pdf](./DA262.pdf) for classroom training)
 - [Exercise 0 - Preparations](exercises/ex0/)
 - [Exercise 1 - Load data from SAP HANA Cloud](exercises/ex1/)
   - [Exercise 1.1 - Load JSON](exercises/ex1#exercise-11---load-json)
@@ -40,7 +40,8 @@ MyCompany provides fleet management services for large enterprise customers. The
   
 
 ## Extended Scenario
-[Find TechEd 2021 materials here](https://blogs.sap.com/2021/10/21/sap-data-warehouse-cloud-at-sap-teched-2021/)
+- [TechEd 2022 DA160 - Explore SAP Data Warehouse Cloud from A to Z](https://github.com/SAP-samples/teched2022-DA160)
+- [All TechEd 2021 materials on SAP Data Warehouse Cloud](https://blogs.sap.com/2021/10/21/sap-data-warehouse-cloud-at-sap-teched-2021/)
 
 ## Disclaimer
 Some user interface elements may differ from the screenshot used in the exercise.
