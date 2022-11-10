@@ -79,9 +79,8 @@ Go to tab *Attributes* and choose the plus sign to start attribute creation.
 
 9. In the attribute details page, choose the source attribute to add. We start with the *model* attribute. Open the value help on *Identifier Attribute* and choose the *model* attribute. On close give it a meaningful business name (e.g. Model Name) and close the page by hitting *Save*
 <br> ![ADS registration - attribute selection](images/ads_reg_attribute_set_source_attrib.jpg)
-<br>
-some text
-<br> ![ADS registration - save](images/ads_reg_attribute_save.jpg)
+
+<br> ![ADS registration - save](images/ads_reg_attribute_save_v2.jpg)
 
 10. Repeat the above 3 steps for these attributes for attribute *marke* also. Set its business name to *Brand name*
 
