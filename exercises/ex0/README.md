@@ -8,7 +8,7 @@ The TechEd 2022 Hands-On sessions assume that you are using a Guided Experience 
 
 ![Web site](/exercises/ex0/images/0.png)
 
-2. Choose "Experience SAP Data Warehouse Cloud" and fill out the form. Click submit to get your trail account login data.
+2. Choose "Experience SAP Data Warehouse Cloud" and fill out the form. Click submit to get your trial account login data.
 
 ![Web site](/exercises/ex0/images/1.png)
 
