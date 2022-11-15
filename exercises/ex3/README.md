@@ -161,15 +161,13 @@ For each of the four attributes, do the following:
 * Switch to *Attributes* tab 
 * Choose plus (+) sign 
 * In section *Source*, select attribute type *Dimension Source Attribute*
-* Choose respesource attribute (e.g. *brand*, *group*, *model*, *origin*)
+* Choose respective source attribute (e.g. *brand*, *group*, *model*, *origin*)
 * Define business name and technical name
 * Save your work  
 **Note:** after these steps, you will have created <u>four</u> attributes  
-<br>
-![Test](/exercises/ex3/images/53.png) <br>
-![Test](/exercises/ex3/images/54.png) <br>
-![Fleet Mgmt Attribute List](images/FleetMgmt_Attribute_List.png) 
-<br>
+<br> ![Preview - Tab Attributes](images/53.png) 
+<br> ![Preview - Details for Attribute](images/54.png) 
+<br> ![Fleet Mgmt Attribute List](images/FleetMgmt_Attribute_List.png)
 6. Go to the *General* sheet and check the *Allow public data access* box. This specifies that no dedicated "authorization scenario" is active to restrict data access for individual users or groups to specific parts of the data.  
 Then click "Save".  <br>
 ![Test](/exercises/ex3/images/56.png) <br>
