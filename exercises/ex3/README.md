@@ -10,7 +10,7 @@ So let's get started then. These are the steps we are going to run through:
     - [Exercise 3.3 - Create Analytical Dataset for Car Registration data](#exercise-33---create-analytical-dataset-for-car-registration-data)
 - Create reporting model for SAP Anayltics Cloud
     - [Exercise 3.4 - Create Multifact Consumption Model (Car Registration Data and Sales Data)](#exercise-34---create-multifact-consumption-model-that-brings-together-the-numbers-for-car-registrations-and-internal-sales)
-    - [Exercise 3.5 - Create Key Figures](#exercise-35---create-key-figures)
+    - [Exercise 3.5 - Create Key Figures](#exercise-35---add-key-figures)
 
 ## Exercise 3.1 - Create a Dimension for Product
 Car registration data and sales data both contain facts about the same entity, namely our product master. In DWC Business Layer terms, we talk about a "shared dimension" of the two fact sources and model the product master data as a *Business Layer dimension*. Subsequently, the two fact sources are modelled as *Business Layer Analytical Datasets* that each have an association towards that product dimension. To create the product dimension, please proceed as follows: 
