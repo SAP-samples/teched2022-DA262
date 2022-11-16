@@ -19,6 +19,10 @@ MyCompany provides fleet management services for large enterprise customers. The
 - Access to a Guided Experience system of SAP Data Warehouse Cloud tenant (if you don't have one yet, please follow the instructions of [exercise 0](/exercises/ex0/))
 - This [ressource archive](/TechEd_2022_DA262.zip) will be required in [exercise 1](/exercises/ex1/) 
 
+System Access <br>
+SAP Data Warehouse Cloud: https://academy-t-dwc.us10.hcs.cloud.sap/ <br>
+SAP Analytics Cloud: https://academy-t-sac.us10.hcs.cloud.sap/
+
 ## Exercises
 - [Overview on Exercises and Object Model](exercises/overview/) (also as [DA262.pdf](./DA262.pdf) for classroom training)
 - [Exercise 0 - Preparations](exercises/ex0/)
