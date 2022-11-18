@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-DA262)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-DA262)
+
 # DA262 - Modeling External and SAP HANA Data in SAP Data Warehouse Cloud
 
 ## Overview
