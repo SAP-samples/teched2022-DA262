@@ -15,7 +15,7 @@ MyCompany provides fleet management services for large enterprise customers. The
 * Provided data tables: [TechEd_2022_DA262.zip](TechEd_2022_DA262.zip)
 * Finished Product: Dashboard showing number of cars by manufacturer by county/state.
 
-## Pre-Requisites
+## Requirements
 - Google Chrome
 - Access to this GitHub repository
 - Access to a Guided Experience system of SAP Data Warehouse Cloud tenant (if you don't have one yet, please follow the instructions of [exercise 0](/exercises/ex0/))
